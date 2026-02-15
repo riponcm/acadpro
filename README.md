@@ -10,7 +10,7 @@ Designed for researchers, professors, and academics who want a polished online p
 > **If this project is useful to you, please consider giving it a star.**
 > Stars help others discover this project and motivate continued development.
 >
-> [![Star This Repo](https://img.shields.io/github/stars/YOUR_USERNAME/YOUR_REPO?style=for-the-badge&color=2d5a7b&labelColor=ffffff&label=Star%20This%20Repo)](https://github.com/riponcm/acadpro)
+> [![Star This Repo](https://img.shields.io/github/stars/riponcm/acadpro?style=for-the-badge&color=2d5a7b&labelColor=ffffff&label=Star%20This%20Repo)](https://github.com/riponcm/acadpro)
 
 ---
 
@@ -25,6 +25,10 @@ The design follows an editorial aesthetic with warm muted tones, refined typogra
 ## Preview
 
 > Add your screenshots below. Replace the placeholder paths with actual image paths from your repository.
+
+**Hero and Photo Slider**
+
+![Hero Section](screenshots/hero.png)
 
 **Light Mode**
 
