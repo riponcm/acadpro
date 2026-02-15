@@ -1,7 +1,16 @@
 ![Acadpro Academic Portfolio](https://img.shields.io/badge/Academic-Portfolio-2d5a7b?style=for-the-badge&labelColor=ffffff) ![Version 1.0.0](https://img.shields.io/badge/Version-1.0.0-2d5a7b?style=for-the-badge&labelColor=ffffff) ![License](https://img.shields.io/badge/License-Restricted-2d5a7b?style=for-the-badge&labelColor=ffffff)
 
 
+<div align="center">
+
 [![Live Demo](https://img.shields.io/badge/Live_Demo-acadpro.netlify.app-2d5a7b?style=for-the-badge&labelColor=ffffff&logo=googlechrome&logoColor=2d5a7b)](https://acadpro.netlify.app)
+
+</div>
+
+**Preview**
+
+![Hero Section](screenshots/hero.png)
+
 # Academic Portfolio Template
 
 **A modern, single-page academic portfolio built with pure HTML, CSS, and JavaScript.**
@@ -24,13 +33,8 @@ The design follows an editorial aesthetic with warm muted tones, refined typogra
 
 ---
 
-## Preview
+## Screenshots
 
-> Add your screenshots below. Replace the placeholder paths with actual image paths from your repository.
-
-**Hero and Photo Slider**
-
-![Hero Section](screenshots/hero.png)
 
 **Light Mode**
 
@@ -39,10 +43,6 @@ The design follows an editorial aesthetic with warm muted tones, refined typogra
 **Dark Mode**
 
 ![Dark Mode Screenshot](screenshots/dark-mode.png)
-
-**Hero and Photo Slider**
-
-![Hero Section](screenshots/hero.png)
 
 **Open to Work Banner**
 
@@ -74,10 +74,9 @@ The design follows an editorial aesthetic with warm muted tones, refined typogra
 | 10 | **Contact** | Embedded Google Map, contact details, and social links |
 | 11 | **Footer** | Copyright, author credit, version, and repo link |
 ```
----
-
+```
 ## Features
-
+```
 ### Design
 
 - Clean editorial typography using Playfair Display and Source Sans 3
@@ -108,12 +107,14 @@ The design follows an editorial aesthetic with warm muted tones, refined typogra
 - Zero JavaScript frameworks -- pure vanilla JS
 - No cookies, no analytics, no tracking
 
----
+```
 
 ## Deployment
 
+```
+```
 ### Option 1 -- Netlify (Recommended for beginners)
-
+```
 1. Download or clone this repository.
 2. Go to [app.netlify.com](https://app.netlify.com) and sign in.
 3. Click **"Add new site"** then **"Deploy manually"**.
@@ -121,9 +122,9 @@ The design follows an editorial aesthetic with warm muted tones, refined typogra
 5. Your site is live. Netlify provides a free URL and HTTPS.
 
 To update: go to the **Deploys** tab on your site dashboard, scroll down, and drag the updated folder into the re-deploy area.
-
+```
 ### Option 2 -- GitHub Pages
-
+```
 1. Fork or clone this repository to your GitHub account.
 
 2. Go to your repository **Settings** then **Pages**.
@@ -132,12 +133,8 @@ To update: go to the **Deploys** tab on your site dashboard, scroll down, and dr
 
 4. Click **Save**. Your site will be available at:
 
-```
-https://github.com/riponcm/acadpro
-```
-
 5. Any push to the selected branch will automatically redeploy.
-
+```
 ### Option 3 -- Clone and Run Locally
 
 ```bash
@@ -201,7 +198,7 @@ If you need a tailored version of this portfolio with custom branding, unique la
 | | |
 |:---|:---|
 | **Author** | Ripon Chandra Malo |
-| **LinkedIn** | *[https://www.linkedin.com/in/engr-ripon/]* |
+| **LinkedIn** | *https://www.linkedin.com/in/engr-ripon/* |
 
 Please include a brief description of what you need and your timeline. Typical turnaround for custom modifications is 3 to 7 business days depending on scope.
 
@@ -275,9 +272,9 @@ Designed by **Ripon Chandra Malo**
 ---
 
 > **If this project helped you, consider buying me a coffee.**
+<div align="center">
 
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy_Me_a_Coffee-2d5a7b?style=for-the-badge&labelColor=ffffff&logo=buymeacoffee&logoColor=2d5a7b)](https://www.buymeacoffee.com/riponce)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy_Me_a_Coffee-2d5a7b?style=for-the-badge&labelColor=ffffff&logo=buymeacoffee&logoColor=2d5a7b)](https://www.buymeacoffee.com/riponce)            [![Star This Repo](https://img.shields.io/badge/Give_a_Star-2d5a7b?style=for-the-badge&labelColor=ffffff&logo=github&logoColor=2d5a7b)](https://github.com/riponcm/acadpro)
 
-[![Star This Repo](https://img.shields.io/badge/Give_a_Star-2d5a7b?style=for-the-badge&labelColor=ffffff&logo=github&logoColor=2d5a7b)](https://github.com/riponcm/acadpro)
-
+</div>
 
