@@ -1,5 +1,7 @@
 ![Acadpro Academic Portfolio](https://img.shields.io/badge/Academic-Portfolio-2d5a7b?style=for-the-badge&labelColor=ffffff) ![Version 1.0.0](https://img.shields.io/badge/Version-1.0.0-2d5a7b?style=for-the-badge&labelColor=ffffff) ![License](https://img.shields.io/badge/License-Restricted-2d5a7b?style=for-the-badge&labelColor=ffffff)
 
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-acadpro.netlify.app-2d5a7b?style=for-the-badge&labelColor=ffffff&logo=googlechrome&logoColor=2d5a7b)](https://acadpro.netlify.app)
 # Academic Portfolio Template
 
 **A modern, single-page academic portfolio built with pure HTML, CSS, and JavaScript.**
@@ -58,30 +60,20 @@ The design follows an editorial aesthetic with warm muted tones, refined typogra
 
 ## Page Structure
 
+| # | Section | Description |
+|:---:|:---|:---|
+| 01 | **Header** | Sticky navigation with glass blur effect and theme toggle |
+| 02 | **Hero** | Welcome text with auto-rotating photo carousel |
+| 03 | **Hiring Banner** | Highlighted "Open to Work" section with animated pulse |
+| 04 | **Expertise Cloud** | Interactive skill tags with proficiency tooltips |
+| 05 | **Projects** | Card grid with SVG illustrations, GitHub links, share dropdown |
+| 06 | **Publications** | Card grid with BibTeX download, PDF button, social sharing |
+| 07 | **Teaching** | Video tiles that open YouTube in a new tab |
+| 08 | **Experience** | Tabbed panel with work history and education with logos |
+| 09 | **Awards** | Compact cards with external links and hover arrows |
+| 10 | **Contact** | Embedded Google Map, contact details, and social links |
+| 11 | **Footer** | Copyright, author credit, version, and repo link |
 ```
-Header .............. Sticky navigation with glass blur effect and theme toggle
-    |
-Hero ................ Welcome text + auto-rotating photo carousel
-    |
-Hiring Banner ....... Highlighted "Open to Work" section with animated pulse
-    |
-Expertise Cloud ..... Interactive skill tags with proficiency tooltips
-    |
-Projects ............ Card grid with SVG illustrations, GitHub links, share dropdown
-    |
-Publications ........ Card grid with BibTeX download, PDF button, social sharing
-    |
-Teaching ............ Video tiles that open YouTube in a new tab
-    |
-Experience .......... Tabbed panel -- work history and education with logos
-    |
-Awards .............. Compact cards with external links and hover arrows
-    |
-Contact ............. Embedded Google Map + contact details + social links
-    |
-Footer .............. Copyright, author credit, version, and repo link
-```
-
 ---
 
 ## Features
@@ -209,8 +201,7 @@ If you need a tailored version of this portfolio with custom branding, unique la
 | | |
 |:---|:---|
 | **Author** | Ripon Chandra Malo |
-| **Email** | *[Add your contact email here]* |
-| **LinkedIn** | *[Add your LinkedIn URL here]* |
+| **LinkedIn** | *[https://www.linkedin.com/in/engr-ripon/]* |
 
 Please include a brief description of what you need and your timeline. Typical turnaround for custom modifications is 3 to 7 business days depending on scope.
 
@@ -253,10 +244,10 @@ Violations of these terms may result in a takedown request. If you are unsure wh
 ```
 repository/
   |
-  |-- index.html ........... Complete portfolio (single file)
-  |-- README.md ............ This file
-  |-- LICENSE.txt .......... Full license terms
-  |-- screenshots/ ......... Preview images for this README
+  |-- index.html
+  |-- README.md 
+  |-- LICENSE.txt 
+  |-- screenshots/
        |-- light-mode.png
        |-- dark-mode.png
        |-- hero.png
@@ -277,8 +268,16 @@ repository/
 
 ---
 
-**Academic Portfolio Template** -- Version 1.0.0
+**AcadPro-An Academic Portfolio Template** -- Version 1.0.0
 
 Designed by **Ripon Chandra Malo**
 
+---
+
+> **If this project helped you, consider buying me a coffee.**
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy_Me_a_Coffee-2d5a7b?style=for-the-badge&labelColor=ffffff&logo=buymeacoffee&logoColor=2d5a7b)](https://www.buymeacoffee.com/riponce)
+
 [![Star This Repo](https://img.shields.io/badge/Give_a_Star-2d5a7b?style=for-the-badge&labelColor=ffffff&logo=github&logoColor=2d5a7b)](https://github.com/riponcm/acadpro)
+
+
