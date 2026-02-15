@@ -1,0 +1,454 @@
+<!doctype html>
+
+<!--
+  Copyright © Ripon Chandra Malo
+  Version: V1.0.0
+
+  License / Usage:
+  - You may modify and adapt this website code.
+  - You may NOT sell or commercially redistribute this work.
+  - Please give credit to the original author: "Ripon Chandra Malo".
+  - This notice must remain visible in the source and in the footer of any published copy.
+
+  (You can modify wording for clarity, but the above terms should be kept.)
+-->
+
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Dr. R.C Malo — Acad Pror V1.0.0</title>
+<meta name="author" content="Ripon Chandra Malo">
+<meta name="version" content="V1.0.0">
+<meta name="copyright" content="© Ripon Chandra Malo. Modify allowed; commercial sale not permitted. Please give credit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%231a1a2e'/%3E%3Ctext x='50%25' y='58%25' font-size='11' text-anchor='middle' fill='%23e0c097' font-family='Georgia,serif' font-weight='bold'%3EAR%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#faf9f7;--surface:#f0eeea;--text:#1a1a2e;--muted:#6b6b7b;--accent:#2d5a7b;--accent-warm:#c8956c;--accent-sage:#5a7a6a;--card:#fff;--card-border:rgba(0,0,0,0.06);--glass:rgba(250,249,247,0.88);--radius:14px;--shadow:0 2px 20px rgba(26,26,46,0.06);--shadow-hover:0 14px 44px rgba(26,26,46,0.11);--container:1080px;--serif:'Playfair Display',Georgia,serif;--sans:'Source Sans 3',system-ui,sans-serif;--transition:0.3s cubic-bezier(0.4,0,0.2,1)}
+[data-theme="dark"]{--bg:#0d0d18;--surface:#14142a;--text:#e8e6e1;--muted:#9a99a8;--accent:#7badc8;--accent-warm:#d4a574;--accent-sage:#7dab95;--card:#1a1a2e;--card-border:rgba(255,255,255,0.07);--glass:rgba(13,13,24,0.9);--shadow:0 2px 20px rgba(0,0,0,0.35);--shadow-hover:0 14px 44px rgba(0,0,0,0.45)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--text);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;font-size:15px}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:0.02;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:128px}
+a{color:inherit}img{display:block;max-width:100%}
+.wrap{max-width:var(--container);margin:0 auto;padding:0 1.5rem}
+
+/* Header */
+.header{position:sticky;top:0;z-index:60;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);background:var(--glass);border-bottom:1px solid var(--card-border)}
+.header-inner{display:flex;align-items:center;gap:1rem;padding:0.75rem 0}
+.brand{display:flex;align-items:center;gap:0.7rem;text-decoration:none;color:inherit}
+.logo{width:42px;height:42px;border-radius:10px;display:grid;place-items:center;background:var(--text);color:var(--bg);font-family:var(--serif);font-size:15px;letter-spacing:-0.5px;flex-shrink:0}
+.brand-text .name{font-family:var(--serif);font-size:1.05rem}
+.brand-text .tagline{font-size:0.76rem;color:var(--muted);font-weight:500}
+nav{margin-left:auto;display:flex;gap:0.1rem;align-items:center;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;padding:0.4rem 0.55rem;border-radius:8px;font-size:0.84rem;font-weight:600;transition:all var(--transition)}
+nav a:hover{color:var(--text);background:var(--surface)}
+.theme-btn{background:var(--surface);border:1px solid var(--card-border);width:36px;height:36px;border-radius:10px;cursor:pointer;display:grid;place-items:center;transition:all var(--transition);margin-left:0.2rem;color:var(--muted)}
+.theme-btn:hover{border-color:var(--accent);color:var(--accent)}
+.theme-btn svg{width:18px;height:18px}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1fr;gap:2rem;align-items:center;padding:3rem 0 2rem}
+@media(min-width:860px){.hero{grid-template-columns:1fr 400px}}
+.hero-text .kicker{font-size:0.76rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--accent-warm);font-weight:700;margin-bottom:0.5rem}
+.hero-text h1{font-family:var(--serif);font-size:clamp(2rem,4vw,2.7rem);line-height:1.15;margin-bottom:1rem}
+.hero-text .lead{color:var(--muted);max-width:52ch;margin-bottom:1.3rem;font-size:0.95rem}
+.hero-text .lead strong{color:var(--text);font-weight:600}
+.hero-actions{display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center}
+.hero-role{margin-top:0.8rem;font-size:0.82rem;color:var(--muted);display:flex;align-items:center;gap:0.4rem}
+.hero-role svg{width:14px;height:14px;opacity:0.5}
+
+/* Buttons */
+.btn-primary{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:10px;background:var(--text);color:var(--bg);text-decoration:none;font-weight:600;font-size:0.88rem;transition:all var(--transition);border:none;cursor:pointer;font-family:var(--sans)}
+.btn-primary:hover{opacity:0.85;transform:translateY(-1px)}
+.btn-outline{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:10px;background:transparent;border:1.5px solid var(--card-border);color:var(--text);text-decoration:none;font-weight:600;font-size:0.88rem;transition:all var(--transition)}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+
+/* Photo Carousel */
+.featured-card{background:var(--card);border:1px solid var(--card-border);border-radius:16px;padding:0.7rem;box-shadow:var(--shadow)}
+.photo-carousel{position:relative;overflow:hidden;border-radius:12px;height:320px;background:var(--surface)}
+.photo-track{display:flex;height:100%;transition:transform 700ms cubic-bezier(0.22,0.9,0.3,1)}
+.photo-slide{min-width:100%;height:100%;position:relative;overflow:hidden}
+.photo-slide img{width:100%;height:100%;object-fit:cover;transition:transform 8s ease}
+.photo-slide.active img{transform:scale(1.06)}
+.photo-slide::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 50%,rgba(0,0,0,0.12) 100%);pointer-events:none}
+.photo-dots{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:5}
+.photo-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.45);border:none;cursor:pointer;transition:all var(--transition);padding:0}
+.photo-dot.active{background:#fff;width:22px;border-radius:4px}
+.carousel-nav{display:flex;justify-content:flex-end;gap:0.3rem;padding:0.5rem 0.1rem 0}
+.car-btn{width:32px;height:32px;border-radius:8px;border:1px solid var(--card-border);background:var(--bg);color:var(--muted);cursor:pointer;display:grid;place-items:center;transition:all var(--transition)}
+.car-btn:hover{border-color:var(--accent);color:var(--accent)}
+.car-btn svg{width:14px;height:14px}
+
+/* Open to Work Banner */
+.otw-banner{position:relative;margin:2rem 0;padding:2rem 2.2rem;border-radius:18px;overflow:hidden;background:linear-gradient(135deg,var(--accent) 0%,#1e3d5a 50%,var(--accent-sage) 100%);color:#fff}
+.otw-banner::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 15% 50%,rgba(255,255,255,0.08) 0%,transparent 50%),radial-gradient(circle at 85% 30%,rgba(200,149,108,0.15) 0%,transparent 40%);pointer-events:none}
+.otw-banner::after{content:'';position:absolute;top:-60px;right:-40px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,0.04);pointer-events:none}
+.otw-inner{position:relative;z-index:2;display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.otw-pulse{width:54px;height:54px;border-radius:50%;background:rgba(255,255,255,0.12);display:grid;place-items:center;flex-shrink:0;position:relative}
+.otw-pulse::before{content:'';position:absolute;inset:-6px;border-radius:50%;border:2px solid rgba(255,255,255,0.15);animation:otw-ring 2.5s ease-out infinite}
+@keyframes otw-ring{0%{transform:scale(0.9);opacity:1}100%{transform:scale(1.5);opacity:0}}
+.otw-pulse svg{width:26px;height:26px;color:#fff}
+.otw-content{flex:1;min-width:240px}
+.otw-content h3{font-family:var(--serif);font-size:1.3rem;margin-bottom:0.4rem}
+.otw-content p{opacity:0.85;font-size:0.92rem;line-height:1.6;max-width:60ch}
+.otw-cta{display:inline-flex;align-items:center;gap:0.4rem;margin-top:0.7rem;padding:0.55rem 1.1rem;border-radius:10px;background:rgba(255,255,255,0.15);backdrop-filter:blur(6px);color:#fff;font-weight:600;font-size:0.86rem;text-decoration:none;border:1px solid rgba(255,255,255,0.2);transition:all var(--transition)}
+.otw-cta:hover{background:rgba(255,255,255,0.25)}
+.otw-cta svg{width:15px;height:15px}
+
+/* Sections */
+.section{padding:2.5rem 0 0}
+.section-header{margin-bottom:1.5rem}
+.section-header h2{font-family:var(--serif);font-size:1.6rem;margin-bottom:0.3rem}
+.section-header p{color:var(--muted);font-size:0.9rem}
+.grid{display:grid;gap:1rem}
+@media(min-width:700px){.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}}
+
+/* Expertise Cloud */
+.expertise-cloud{display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center;padding:1rem 0}
+.skill-tag{padding:0.45rem 1rem;border-radius:50px;font-size:0.84rem;font-weight:600;border:1.5px solid var(--card-border);background:var(--card);color:var(--muted);transition:all 0.4s cubic-bezier(0.34,1.56,0.64,1);cursor:default;position:relative;box-shadow:var(--shadow);opacity:0;transform:translateY(10px) scale(0.95)}
+.skill-tag.vis{opacity:1;transform:translateY(0) scale(1)}
+.skill-tag:hover{transform:translateY(-4px) scale(1.05);border-color:var(--accent);color:var(--accent);box-shadow:var(--shadow-hover)}
+.skill-tag[data-level="expert"]{border-color:var(--accent);color:var(--accent);font-size:1rem;padding:0.55rem 1.3rem}
+.skill-tag[data-level="advanced"]{font-size:0.92rem;padding:0.5rem 1.1rem}
+.skill-tag::after{content:attr(data-level);position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%) scale(0.8);padding:0.2rem 0.5rem;border-radius:6px;background:var(--text);color:var(--bg);font-size:0.7rem;white-space:nowrap;opacity:0;pointer-events:none;transition:all var(--transition)}
+.skill-tag:hover::after{opacity:1;transform:translateX(-50%) scale(1)}
+
+/* Tabs */
+.tabs-container{background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.tabs-header{display:flex;border-bottom:1px solid var(--card-border);background:var(--surface)}
+.tab-btn{flex:1;padding:0.85rem 1rem;border:none;background:transparent;font-family:var(--sans);font-size:0.9rem;font-weight:600;color:var(--muted);cursor:pointer;position:relative;transition:color var(--transition)}
+.tab-btn.active{color:var(--text)}
+.tab-btn::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2.5px;background:var(--accent);transform:scaleX(0);transition:transform var(--transition)}
+.tab-btn.active::after{transform:scaleX(1)}
+.tab-btn:hover{color:var(--text)}
+.tab-panel{display:none;padding:1.2rem 1.4rem}
+.tab-panel.active{display:block}
+.timeline-item{display:flex;gap:1rem;padding:1.1rem 0;border-bottom:1px solid var(--card-border)}
+.timeline-item:last-child{border-bottom:none}
+.tl-logo{width:48px;height:48px;border-radius:12px;background:var(--surface);display:grid;place-items:center;flex-shrink:0;overflow:hidden;border:1px solid var(--card-border)}
+.tl-logo img{width:100%;height:100%;object-fit:contain;padding:4px}
+.tl-logo svg{width:24px;height:24px;color:var(--accent)}
+.tl-content{flex:1}
+.tl-content h4{font-size:0.95rem;font-weight:600;margin-bottom:0.1rem}
+.tl-content .tl-org{font-size:0.85rem;color:var(--accent);font-weight:600}
+.tl-content .tl-desc{font-size:0.84rem;color:var(--muted);margin-top:0.25rem}
+.tl-year{font-size:0.78rem;font-weight:700;color:var(--muted);white-space:nowrap;padding-top:0.1rem}
+
+/* Cards */
+.card{background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius);padding:1rem;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:0.5rem;transition:all var(--transition)}
+.card:hover{box-shadow:var(--shadow-hover);transform:translateY(-3px)}
+.card-top{display:flex;justify-content:space-between;align-items:flex-start}
+.card-top h3{font-family:var(--serif);font-size:1.05rem;line-height:1.25}
+.card-top .sub{font-size:0.82rem;color:var(--muted);margin-top:0.15rem}
+.tag{font-size:0.72rem;font-weight:700;padding:0.2rem 0.55rem;border-radius:6px;background:var(--surface);color:var(--accent);white-space:nowrap;flex-shrink:0}
+.card-media{border-radius:10px;overflow:hidden;height:130px;background:var(--surface)}
+.card-media svg{width:100%;height:100%;display:block}
+.card-desc{font-size:0.88rem;color:var(--muted);flex:1}
+.card-actions{display:flex;gap:0.4rem;margin-top:auto;align-items:center;flex-wrap:wrap}
+
+/* Action buttons */
+.action-btn{display:inline-flex;align-items:center;gap:0.35rem;padding:0.4rem 0.65rem;border-radius:8px;border:1px solid var(--card-border);background:transparent;color:var(--muted);font-size:0.8rem;font-weight:600;text-decoration:none;cursor:pointer;transition:all var(--transition);font-family:var(--sans)}
+.action-btn:hover{border-color:var(--accent);color:var(--accent)}
+.action-btn svg{width:15px;height:15px}
+
+/* Share Dropdown */
+.share-wrap{position:relative;display:inline-flex}
+.share-dropdown{position:absolute;bottom:calc(100% + 8px);right:0;min-width:180px;background:var(--card);border:1px solid var(--card-border);border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,0.15);padding:0.4rem;opacity:0;pointer-events:none;transform:translateY(6px);transition:all 0.25s ease;z-index:50}
+.share-wrap.open .share-dropdown{opacity:1;pointer-events:auto;transform:translateY(0)}
+.share-option{display:flex;align-items:center;gap:0.6rem;padding:0.55rem 0.7rem;border-radius:8px;border:none;background:transparent;color:var(--text);font-size:0.84rem;font-weight:500;cursor:pointer;width:100%;text-align:left;transition:background var(--transition);text-decoration:none;font-family:var(--sans)}
+.share-option:hover{background:var(--surface)}
+.share-option svg{width:16px;height:16px;flex-shrink:0}
+.share-option.copy-done{color:var(--accent-sage)}
+
+/* Compact Cards */
+.compact-card{background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);display:flex;gap:0.8rem;align-items:flex-start;transition:all var(--transition);text-decoration:none;color:inherit}
+a.compact-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-3px);border-color:var(--accent)}
+a.compact-card:hover .ext-arrow{opacity:1;transform:translateX(0)}
+.compact-icon{width:40px;height:40px;border-radius:10px;background:var(--surface);display:grid;place-items:center;flex-shrink:0;color:var(--accent-warm)}
+.compact-icon svg{width:20px;height:20px}
+.compact-body{flex:1}
+.compact-card h3{font-size:0.93rem;font-weight:600}
+.compact-card .sub{font-size:0.82rem;color:var(--muted)}
+.ext-arrow{color:var(--accent);opacity:0;transform:translateX(-4px);transition:all var(--transition);flex-shrink:0;margin-top:0.2rem}
+.ext-arrow svg{width:16px;height:16px}
+
+/* Video Cards */
+.video-card{background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:all var(--transition);cursor:pointer}
+.video-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-3px)}
+.video-thumb{height:140px;background:var(--surface);display:grid;place-items:center;position:relative}
+.video-thumb svg.bg-art{position:absolute;inset:0;width:100%;height:100%}
+.play-circle{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,0.92);display:grid;place-items:center;position:relative;z-index:2;box-shadow:0 4px 16px rgba(0,0,0,0.15);transition:transform var(--transition)}
+.video-card:hover .play-circle{transform:scale(1.08)}
+.play-circle svg{width:18px;height:18px;color:var(--text);margin-left:2px}
+.video-info{padding:0.8rem 1rem}
+.video-info h4{font-size:0.9rem;font-weight:600;margin-bottom:0.15rem}
+.video-info p{font-size:0.8rem;color:var(--muted)}
+
+/* Contact */
+.contact-grid{display:grid;gap:1rem}
+@media(min-width:860px){.contact-grid{grid-template-columns:1fr 340px}}
+.map-wrap{border-radius:var(--radius);overflow:hidden;border:1px solid var(--card-border);min-height:260px;box-shadow:var(--shadow)}
+.map-wrap iframe{width:100%;height:100%;min-height:260px;border:0;display:block}
+.contact-info{background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius);padding:1.4rem;box-shadow:var(--shadow)}
+.contact-info h3{font-family:var(--serif);font-size:1.15rem;margin-bottom:1rem}
+.contact-list{list-style:none;display:flex;flex-direction:column;gap:0.7rem}
+.contact-item{display:flex;align-items:center;gap:0.7rem;font-size:0.9rem}
+.ci-icon{width:36px;height:36px;border-radius:9px;background:var(--surface);display:grid;place-items:center;flex-shrink:0;color:var(--accent)}
+.ci-icon svg{width:16px;height:16px}
+.contact-item a{color:var(--accent);text-decoration:none}
+.contact-item a:hover{text-decoration:underline}
+.ci-label{font-size:0.73rem;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:0.06em}
+.socials{display:flex;gap:0.4rem;margin-top:1.2rem;padding-top:1rem;border-top:1px solid var(--card-border)}
+.social-btn{width:38px;height:38px;border-radius:10px;border:1px solid var(--card-border);background:transparent;display:grid;place-items:center;color:var(--muted);text-decoration:none;transition:all var(--transition)}
+.social-btn:hover{border-color:var(--accent);color:var(--accent);background:var(--surface)}
+.social-btn svg{width:17px;height:17px}
+
+/* Footer */
+.footer{padding:2rem 0;text-align:center;color:var(--muted);font-size:0.82rem;border-top:1px solid var(--card-border);margin-top:3rem}
+
+/* Animations */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity 0.6s ease,transform 0.6s ease}
+.reveal.vis{opacity:1;transform:none}
+.reveal:nth-child(2){transition-delay:0.07s}.reveal:nth-child(3){transition-delay:0.14s}.reveal:nth-child(4){transition-delay:0.21s}.reveal:nth-child(5){transition-delay:0.28s}.reveal:nth-child(6){transition-delay:0.35s}
+
+/* Modal */
+.modal-overlay{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:1rem}
+.modal-overlay.open{display:flex}
+.modal-bg{position:absolute;inset:0;background:rgba(0,0,0,0.55);backdrop-filter:blur(4px)}
+.modal-box{position:relative;max-width:860px;width:100%;background:var(--card);border-radius:14px;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,0.3)}
+.modal-body{padding:0}
+.modal-close{position:absolute;top:0.6rem;right:0.6rem;z-index:10;width:34px;height:34px;border-radius:8px;border:none;background:rgba(255,255,255,0.9);cursor:pointer;display:grid;place-items:center}
+.modal-close svg{width:16px;height:16px}
+
+@media(max-width:699px){nav a{font-size:0.78rem;padding:0.35rem 0.4rem}.photo-carousel{height:260px}.video-thumb{height:110px}.hero{padding:2rem 0}.otw-inner{flex-direction:column;text-align:center;align-items:center}}
+@media print{.header,.theme-btn,.action-btn,.car-btn,.modal-overlay,.otw-banner{display:none!important}body{background:#fff}.card,.compact-card{box-shadow:none;border:1px solid #ddd}}
+</style>
+</head>
+<body data-theme="light">
+<header class="header"><div class="wrap header-inner">
+<a class="brand" href="#top"><div class="logo">RC</div><div class="brand-text"><div class="name">Dr. R.C. Malo</div><div class="tagline">ML · GEO · SciML Research</div></div></a>
+<nav><a href="#projects">Projects</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+<button class="theme-btn" id="themeToggle" aria-label="Toggle theme"><svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></button></nav>
+</div></header>
+
+<main class="wrap" id="top">
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-text reveal">
+<div class="kicker">Welcome</div>
+<h1>Designing inclusive interfaces &amp; reproducible research</h1>
+<p class="lead">I'm <strong>Dr. R.C.Malo</strong> — I build usable systems, publish reproducible work, and teach students how to design responsibly. This portfolio showcases my projects, publications, and teaching.</p>
+<div class="hero-actions">
+<a class="btn-primary" href="#projects"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>View Projects</a>
+<a class="btn-outline" href="#publications">Publications</a>
+</div>
+<div class="hero-role"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Assistant Professor · University of Utah</div>
+</div>
+
+<div class="featured-card reveal">
+<div class="photo-carousel" id="photoCarousel">
+<div class="photo-track" id="photoTrack">
+<div class="photo-slide active"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhv3ARxzrTdm5d8WmZRJpuvfW9Lz5UBl0PsHthzN4Xcv3L4zGEPlyT654uEC2dqdDnS0kGZa1EYBK3eIjzhY9KQZCNX_-TNJpgkZYlFECsZ6C4ndpIZhYJsHS7WjsCSzI8GHk_r6oBCwr2MFD_S9gThvVDiTBxZqbBM5QHaGNEC1lZPX9OzfxiIkSwvjo/s2048/IMG_2234.jpg" alt="Portrait" loading="eager"></div>
+<div class="photo-slide"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDnPW0npgfHE3SRGMN7Yl0FlV8PheXWuTOioHTGXxld9wfxHTnWraDcTrkN0sq4fxjpsIYJebpJVQu5J23Ge6isguhF1l1k0XArjvHAmzlNkDIPKSr-Lwfa4x_9UR01jFYv7KPS9D52tN94ANzksoer4H9v5vxSUM-9ghRCUOKKxEbRW0Nlt2QlWNON3Q/s320/IMG_4502.jpg" alt="Headshot" loading="lazy"></div>
+<div class="photo-slide"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAfZT8IiG1wH3bdfPXUVci_AQtM1icfcx9KpT4lyLATkYWiPvhkcmPlbWk44G8cR8a9TRw6aGpkXJv57HVwDfJy4zI6yPnv0yT3Q4mqt0NtvpaqUZU8vJZTnw5BoAdheoY1vTMe7Qzo7KqvQPL62QfTXEcflC6tXHQ0dJdThobrGsKtO42p5D7puKdCac/s320/like.png" alt="Professional" loading="lazy"></div>
+</div>
+<div class="photo-dots" id="photoDots"><button class="photo-dot active" data-i="0"></button><button class="photo-dot" data-i="1"></button><button class="photo-dot" data-i="2"></button></div>
+</div>
+<div class="carousel-nav">
+<button class="car-btn" id="photoPrev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+<button class="car-btn" id="photoNext" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+</div></div>
+</section>
+
+<!-- OPEN TO WORK -->
+<section class="otw-banner reveal" id="hiring">
+<div class="otw-inner">
+<div class="otw-pulse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg></div>
+<div class="otw-content">
+<h3>Open to Collaboration &amp; Hiring</h3>
+<p>I'm actively seeking research collaborators, postdoctoral fellows, and motivated graduate students interested in human-computer interaction, accessibility, and reproducible research methods. If you share a passion for inclusive design and rigorous experimentation, let's build something meaningful together.</p>
+<a class="otw-cta" href="#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Get in Touch</a>
+</div></div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="section" id="expertise">
+<div class="section-header"><h2>Areas of Expertise</h2><p>Core skills and research domains — hover for proficiency level.</p></div>
+<div class="expertise-cloud" id="expertiseCloud">
+<span class="skill-tag" data-level="expert">Human-Computer Interaction</span>
+<span class="skill-tag" data-level="expert">Accessibility</span>
+<span class="skill-tag" data-level="expert">Reproducible Research</span>
+<span class="skill-tag" data-level="advanced">User Study Design</span>
+<span class="skill-tag" data-level="advanced">Statistical Analysis</span>
+<span class="skill-tag" data-level="advanced">Python</span>
+<span class="skill-tag" data-level="advanced">R / RStudio</span>
+<span class="skill-tag" data-level="intermediate">React / JavaScript</span>
+<span class="skill-tag" data-level="intermediate">Figma &amp; Sketch</span>
+<span class="skill-tag" data-level="intermediate">Machine Learning</span>
+<span class="skill-tag" data-level="advanced">Assistive Technology</span>
+<span class="skill-tag" data-level="intermediate">LaTeX</span>
+<span class="skill-tag" data-level="advanced">Data Visualization</span>
+<span class="skill-tag" data-level="intermediate">Docker &amp; CI/CD</span>
+<span class="skill-tag" data-level="expert">Inclusive Design</span>
+<span class="skill-tag" data-level="intermediate">Natural Language Processing</span>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+<div class="section-header"><h2>Projects</h2><p>Selected projects with demos, source code, and documentation.</p></div>
+<div class="grid g3">
+<article class="card reveal"><div class="card-top"><div><h3>Assistive UX Toolkit</h3><div class="sub">Tooling &amp; patterns for inclusive interfaces</div></div><span class="tag">2025</span></div><div class="card-media"><svg viewBox="0 0 400 260"><defs><linearGradient id="pa" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#e8f4f8"/><stop offset="100%" stop-color="#d4e8f0"/></linearGradient></defs><rect width="400" height="260" fill="url(#pa)"/><rect x="30" y="30" width="160" height="100" rx="12" fill="#fff" opacity=".85"/><circle cx="70" cy="70" r="16" fill="#c8956c" opacity=".6"/><rect x="100" y="60" width="70" height="8" rx="4" fill="#2d5a7b" opacity=".2"/><rect x="210" y="70" width="160" height="100" rx="12" fill="#fff" opacity=".7"/><circle cx="250" cy="110" r="14" fill="#5a7a6a" opacity=".5"/><circle cx="340" cy="220" r="24" fill="#2d5a7b" opacity=".1"/></svg></div><div class="card-desc">A toolkit for designers &amp; developers to build accessible UI components and test assistive workflows.</div><div class="card-actions"><a class="action-btn" href="#" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297a12 12 0 00-3.79 23.39c.6.11.82-.26.82-.58v-2.17c-3.34.73-4.04-1.61-4.04-1.61-.55-1.41-1.34-1.79-1.34-1.79-1.1-.75.08-.74.08-.74 1.22.08 1.86 1.26 1.86 1.26 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.33.76-1.64-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 016 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.82 5.62-5.5 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0012 .297z"/></svg>GitHub</a><div class="share-wrap"><button class="action-btn share-toggle" data-title="Assistive UX Toolkit" data-url="https://example.edu/assistive-ux"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Share</button><div class="share-dropdown"></div></div></div></article>
+<article class="card reveal"><div class="card-top"><div><h3>Repro Pipelines</h3><div class="sub">Workflows for reproducible experiments</div></div><span class="tag">2024</span></div><div class="card-media"><svg viewBox="0 0 400 260"><defs><linearGradient id="pb" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f5efe6"/><stop offset="100%" stop-color="#ece4d4"/></linearGradient></defs><rect width="400" height="260" fill="url(#pb)"/><circle cx="80" cy="130" r="30" fill="#fff" stroke="#c8956c" stroke-width="1.5" opacity=".8"/><circle cx="200" cy="90" r="30" fill="#fff" stroke="#5a7a6a" stroke-width="1.5" opacity=".8"/><circle cx="200" cy="170" r="30" fill="#fff" stroke="#5a7a6a" stroke-width="1.5" opacity=".8"/><circle cx="320" cy="130" r="30" fill="#fff" stroke="#2d5a7b" stroke-width="1.5" opacity=".8"/><line x1="110" y1="120" x2="170" y2="100" stroke="#c8956c" stroke-width="1" opacity=".4"/><line x1="110" y1="140" x2="170" y2="160" stroke="#c8956c" stroke-width="1" opacity=".4"/><line x1="230" y1="100" x2="290" y2="120" stroke="#5a7a6a" stroke-width="1" opacity=".4"/><line x1="230" y1="160" x2="290" y2="140" stroke="#5a7a6a" stroke-width="1" opacity=".4"/></svg></div><div class="card-desc">Automated scripts and containerized environments that make experiments reproducible.</div><div class="card-actions"><a class="action-btn" href="#" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297a12 12 0 00-3.79 23.39c.6.11.82-.26.82-.58v-2.17c-3.34.73-4.04-1.61-4.04-1.61-.55-1.41-1.34-1.79-1.34-1.79-1.1-.75.08-.74.08-.74 1.22.08 1.86 1.26 1.86 1.26 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.33.76-1.64-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 016 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.82 5.62-5.5 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0012 .297z"/></svg>GitHub</a><div class="share-wrap"><button class="action-btn share-toggle" data-title="Repro Pipelines" data-url="https://example.edu/repro-pipelines"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Share</button><div class="share-dropdown"></div></div></div></article>
+<article class="card reveal"><div class="card-top"><div><h3>Study Portal</h3><div class="sub">Participant recruitment &amp; consent</div></div><span class="tag">2023</span></div><div class="card-media"><svg viewBox="0 0 400 260"><defs><linearGradient id="pc" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#edf5f0"/><stop offset="100%" stop-color="#dceee3"/></linearGradient></defs><rect width="400" height="260" fill="url(#pc)"/><rect x="50" y="40" width="180" height="120" rx="14" fill="#fff" opacity=".85"/><rect x="70" y="60" width="80" height="10" rx="5" fill="#5a7a6a" opacity=".25"/><rect x="70" y="80" width="140" height="6" rx="3" fill="#5a7a6a" opacity=".12"/><rect x="70" y="124" width="60" height="22" rx="6" fill="#5a7a6a" opacity=".2"/><circle cx="310" cy="130" r="40" fill="#5a7a6a" opacity=".08"/></svg></div><div class="card-desc">A secure, privacy-preserving portal to manage research participants and consent forms.</div><div class="card-actions"><a class="action-btn" href="#" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297a12 12 0 00-3.79 23.39c.6.11.82-.26.82-.58v-2.17c-3.34.73-4.04-1.61-4.04-1.61-.55-1.41-1.34-1.79-1.34-1.79-1.1-.75.08-.74.08-.74 1.22.08 1.86 1.26 1.86 1.26 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.33.76-1.64-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 016 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.82 5.62-5.5 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0012 .297z"/></svg>GitHub</a><div class="share-wrap"><button class="action-btn share-toggle" data-title="Study Portal" data-url="https://example.edu/study-portal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Share</button><div class="share-dropdown"></div></div></div></article>
+</div></section>
+
+<!-- PUBLICATIONS -->
+<section class="section" id="publications">
+<div class="section-header"><h2>Publications</h2><p>Selected publications with BibTeX, PDF download, and sharing.</p></div>
+<div class="grid g3">
+<article class="card reveal"><div class="card-top"><div><h3>Human-Centered Pipelines</h3><div class="sub">A. Researcher, B. Coauthor</div></div><span class="tag">Journal · 2024</span></div><div class="card-media"><svg viewBox="0 0 400 260"><rect width="400" height="260" fill="#e8f4f8"/><rect x="30" y="20" width="200" height="180" rx="10" fill="#fff" opacity=".8"/><rect x="50" y="40" width="100" height="10" rx="5" fill="#2d5a7b" opacity=".25"/><rect x="50" y="60" width="150" height="6" rx="3" fill="#2d5a7b" opacity=".12"/><rect x="50" y="76" width="140" height="6" rx="3" fill="#2d5a7b" opacity=".12"/><rect x="50" y="130" width="150" height="50" rx="6" fill="#2d5a7b" opacity=".06"/><circle cx="320" cy="90" r="50" fill="#2d5a7b" opacity=".07"/><circle cx="340" cy="180" r="30" fill="#c8956c" opacity=".1"/></svg></div><div class="card-desc"><em>Journal of Examples</em> — Proposed a reproducible workflow for HCI experiments integrating participant privacy checks.</div><div class="card-actions"><button class="action-btn" data-bib="@article{researcher2024,title={Human-Centered Pipelines},author={A. Researcher and B. Coauthor},journal={Journal of Examples},year={2024}}" onclick="downloadBib(event)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>BibTeX</button><a class="action-btn" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a><div class="share-wrap"><button class="action-btn share-toggle" data-title="Human-Centered Pipelines" data-url="https://example.edu/paper1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Share</button><div class="share-dropdown"></div></div></div></article>
+<article class="card reveal"><div class="card-top"><div><h3>Assistive Interactions</h3><div class="sub">C. Author, <strong style="color:var(--accent)">A. Researcher</strong></div></div><span class="tag">Conf · 2022</span></div><div class="card-media"><svg viewBox="0 0 400 260"><rect width="400" height="260" fill="#f5efe6"/><rect x="30" y="20" width="200" height="180" rx="10" fill="#fff" opacity=".8"/><rect x="50" y="40" width="110" height="10" rx="5" fill="#c8956c" opacity=".25"/><rect x="50" y="60" width="150" height="6" rx="3" fill="#c8956c" opacity=".12"/><rect x="50" y="130" width="150" height="50" rx="6" fill="#c8956c" opacity=".06"/><rect x="270" y="40" width="100" height="100" rx="14" fill="#c8956c" opacity=".08"/><circle cx="320" cy="90" r="25" fill="#5a7a6a" opacity=".12"/></svg></div><div class="card-desc"><em>Proc. of Something</em> — Explores how assistive feedback can be integrated into standard UI patterns.</div><div class="card-actions"><button class="action-btn" data-bib="@inproceedings{author2022,title={Assistive Interactions},author={C. Author and A. Researcher},booktitle={Proc. of Something},year={2022}}" onclick="downloadBib(event)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>BibTeX</button><a class="action-btn" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a><div class="share-wrap"><button class="action-btn share-toggle" data-title="Assistive Interactions" data-url="https://example.edu/paper2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Share</button><div class="share-dropdown"></div></div></div></article>
+<article class="card reveal"><div class="card-top"><div><h3>Inclusive Design Patterns</h3><div class="sub"><strong style="color:var(--accent)">A. Researcher</strong>, D. Analyst</div></div><span class="tag">Workshop · 2021</span></div><div class="card-media"><svg viewBox="0 0 400 260"><rect width="400" height="260" fill="#edf5f0"/><rect x="30" y="20" width="200" height="180" rx="10" fill="#fff" opacity=".8"/><rect x="50" y="40" width="90" height="10" rx="5" fill="#5a7a6a" opacity=".25"/><rect x="50" y="60" width="150" height="6" rx="3" fill="#5a7a6a" opacity=".12"/><rect x="50" y="130" width="150" height="50" rx="6" fill="#5a7a6a" opacity=".06"/><circle cx="310" cy="110" r="60" fill="#5a7a6a" opacity=".06"/></svg></div><div class="card-desc"><em>Workshop on Inclusive UX</em> — Catalogued 12 design patterns for multi-modal assistive applications.</div><div class="card-actions"><button class="action-btn" data-bib="@inproceedings{researcher2021,title={Inclusive Design Patterns},author={A. Researcher and D. Analyst},booktitle={Workshop on Inclusive UX},year={2021}}" onclick="downloadBib(event)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>BibTeX</button><a class="action-btn" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>PDF</a><div class="share-wrap"><button class="action-btn share-toggle" data-title="Inclusive Design Patterns" data-url="https://example.edu/paper3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Share</button><div class="share-dropdown"></div></div></div></article>
+</div></section>
+
+<!-- TEACHING -->
+<section class="section" id="teaching">
+<div class="section-header"><h2>Teaching — Sample Lectures</h2><p>Click any tile to watch in a modal.</p></div>
+<div class="grid g4">
+<div class="video-card reveal" data-video="https://www.youtube.com/embed/Gl5MVtD3flQ"><div class="video-thumb"><svg class="bg-art" viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice"><rect width="400" height="280" fill="#2d5a7b"/><circle cx="100" cy="80" r="60" fill="#fff" opacity=".06"/><circle cx="300" cy="200" r="80" fill="#fff" opacity=".04"/></svg><div class="play-circle"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21"/></svg></div></div><div class="video-info"><h4>Lecture 1 — Intro to HCI</h4><p>Syllabus &amp; overview</p></div></div>
+<div class="video-card reveal" data-video="https://www.youtube.com/embed/Gl5MVtD3flQ"><div class="video-thumb"><svg class="bg-art" viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice"><rect width="400" height="280" fill="#5a7a6a"/><circle cx="200" cy="100" r="70" fill="#fff" opacity=".05"/></svg><div class="play-circle"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21"/></svg></div></div><div class="video-info"><h4>Lecture 2 — Accessibility</h4><p>Designing for diverse users</p></div></div>
+<div class="video-card reveal" data-video="https://www.youtube.com/embed/Gl5MVtD3flQ"><div class="video-thumb"><svg class="bg-art" viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice"><rect width="400" height="280" fill="#c8956c"/><circle cx="300" cy="60" r="50" fill="#fff" opacity=".08"/></svg><div class="play-circle"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21"/></svg></div></div><div class="video-info"><h4>Lecture 3 — Research Methods</h4><p>Study design &amp; reproducibility</p></div></div>
+<div class="video-card reveal" data-video="https://www.youtube.com/embed/Gl5MVtD3flQ"><div class="video-thumb"><svg class="bg-art" viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice"><rect width="400" height="280" fill="#1a1a2e"/><circle cx="200" cy="140" r="80" fill="#2d5a7b" opacity=".3"/></svg><div class="play-circle"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21"/></svg></div></div><div class="video-info"><h4>Lecture 4 — Tools</h4><p>Analysis &amp; visualization</p></div></div>
+</div></section>
+
+<!-- EXPERIENCE / EDUCATION TABS -->
+<section class="section" id="experience">
+<div class="section-header"><h2>Experience &amp; Education</h2></div>
+<div class="tabs-container reveal">
+<div class="tabs-header"><button class="tab-btn active" data-tab="exp">Experience</button><button class="tab-btn" data-tab="edu">Education</button></div>
+<div class="tab-panel active" id="tab-exp">
+<div class="timeline-item"><div class="tl-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div class="tl-content"><h4>Assistant Professor</h4><div class="tl-org">University of Utah — Dept. of Civil Engineering</div><div class="tl-desc">Leading research in HCI, accessibility, and reproducible methods. Teaching undergraduate and graduate courses.</div></div><div class="tl-year">2022 — Present</div></div>
+<div class="timeline-item"><div class="tl-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div><div class="tl-content"><h4>Postdoctoral Researcher</h4><div class="tl-org">National Institute of Standards — HCI Division</div><div class="tl-desc">Developed accessibility evaluation frameworks and published 4 journal papers on inclusive interface design.</div></div><div class="tl-year">2020 — 2022</div></div>
+<div class="timeline-item"><div class="tl-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div><div class="tl-content"><h4>Research Assistant</h4><div class="tl-org">University of Utah — Interactive Systems Lab</div><div class="tl-desc">Contributed to 3 major research projects on assistive technology and user study design.</div></div><div class="tl-year">2016 — 2020</div></div>
+</div>
+<div class="tab-panel" id="tab-edu">
+<div class="timeline-item"><div class="tl-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Utah_Utes_-_U_logo.svg/3840px-Utah_Utes_-_U_logo.svg.png" alt="CMU"></div><div class="tl-content"><h4>Ph.D. in Human-Computer Interaction</h4><div class="tl-org">University of Utah</div><div class="tl-desc">Dissertation: "Designing Inclusive Pipelines for Reproducible HCI Research." Advised by Prof. Example.</div></div><div class="tl-year">2016 — 2020</div></div>
+<div class="timeline-item"><div class="tl-logo"><img src="https://download.logo.wine/logo/Massachusetts_Institute_of_Technology/Massachusetts_Institute_of_Technology-Logo.wine.png" alt="MIT"></div><div class="tl-content"><h4>M.S. in Computer Science</h4><div class="tl-org">Massachusetts Institute of Technology</div><div class="tl-desc">Specialization in AI and Human Factors. Thesis on adaptive user interfaces.</div></div><div class="tl-year">2014 — 2016</div></div>
+<div class="timeline-item"><div class="tl-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Seal_of_University_of_California%2C_Berkeley.svg/150px-Seal_of_University_of_California%2C_Berkeley.svg.png" alt="Berkeley"></div><div class="tl-content"><h4>B.S. in Cognitive Science</h4><div class="tl-org">University of California, Berkeley</div><div class="tl-desc">Minor in CS. Graduated with honors. Capstone on accessibility in mobile apps.</div></div><div class="tl-year">2010 — 2014</div></div>
+</div></div></section>
+
+<!-- AWARDS & CERTIFICATIONS -->
+<section class="section" id="awards">
+<div class="section-header"><h2>Awards &amp; Certifications</h2></div>
+<div class="grid g3">
+<a class="compact-card reveal" href="https://example.edu/best-paper" target="_blank" rel="noopener"><div class="compact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div><div class="compact-body"><h3>Best Paper Award</h3><div class="sub">Conference X, 2024</div></div><div class="ext-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div></a>
+<a class="compact-card reveal" href="https://example.edu/demo-prize" target="_blank" rel="noopener"><div class="compact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div class="compact-body"><h3>Demo Prize</h3><div class="sub">Symposium Y, 2023</div></div><div class="ext-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div></a>
+<a class="compact-card reveal" href="https://example.edu/fellowship" target="_blank" rel="noopener"><div class="compact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg></div><div class="compact-body"><h3>Graduate Fellowship</h3><div class="sub">Foundation Z, 2021</div></div><div class="ext-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div></a>
+<a class="compact-card reveal" href="https://example.edu/ux-cert" target="_blank" rel="noopener"><div class="compact-icon" style="color:var(--accent)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div class="compact-body"><h3>UX Research Certificate</h3><div class="sub">Provider A, 2023</div></div><div class="ext-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div></a>
+<a class="compact-card reveal" href="https://example.edu/privacy" target="_blank" rel="noopener"><div class="compact-icon" style="color:var(--accent-sage)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="compact-body"><h3>Data Privacy Training</h3><div class="sub">Provider B, 2022</div></div><div class="ext-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div></a>
+<a class="compact-card reveal" href="https://example.edu/teach-cert" target="_blank" rel="noopener"><div class="compact-icon" style="color:var(--accent-sage)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div><div class="compact-body"><h3>Teaching Certificate</h3><div class="sub">Provider C, 2021</div></div><div class="ext-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div></a>
+</div></section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+<div class="section-header"><h2>Contact</h2></div>
+<div class="contact-grid">
+<div class="map-wrap">
+  <iframe 
+    src="https://www.google.com/maps?q=University%20of%20Utah%2C%20Salt%20Lake%20City%2C%20UT&output=embed"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Map showing University of Utah, Salt Lake City">
+  </iframe>
+</div>
+
+<aside class="contact-info"><h3>Get in touch</h3>
+<ul class="contact-list">
+<li class="contact-item"><div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><div class="ci-label">Name</div>Dr. R.C Malo</div></li>
+<li class="contact-item"><div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="ci-label">Email</div><a href="mailto:researcher@example.edu">researcher@example.edu</a></div></li>
+<li class="contact-item"><div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.81.36 1.6.68 2.34a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.74.32 1.53.55 2.34.68A2 2 0 0122 16.92z"/></svg></div><div><div class="ci-label">Phone</div><a href="tel:+14045551234">+1 (404) 555-1234</a></div></li>
+<li class="contact-item"><div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="ci-label">Office</div>University of Utah — Dept. of Civil Engg</div></li>
+</ul>
+<div class="socials">
+<a class="social-btn" href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+<a class="social-btn" href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+<a class="social-btn" href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297a12 12 0 00-3.79 23.39c.6.11.82-.26.82-.58v-2.17c-3.34.73-4.04-1.61-4.04-1.61-.55-1.41-1.34-1.79-1.34-1.79-1.1-.75.08-.74.08-.74 1.22.08 1.86 1.26 1.86 1.26 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.33.76-1.64-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 016 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.82 5.62-5.5 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0012 .297z"/></svg></a>
+<a class="social-btn" href="#" aria-label="Google Scholar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"/></svg></a>
+</div></aside>
+</div></section>
+
+<footer class="footer">
+  &copy; <span id="year"></span> Dr. R.C Malo — Academic Portfolio
+  
+  <div style="margin-top:0.6rem;font-size:0.75rem;opacity:0.7;display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap">
+    
+    <span>
+      Designed by 
+      <a href="https://github.com/YOUR_GITHUB_USERNAME" 
+         target="_blank" 
+         rel="noopener" 
+         style="color:var(--accent);text-decoration:none;">
+         <strong>Ripon Chandra Malo</strong>
+      </a>
+    </span>
+
+    <span>Version V1.0.0</span>
+
+    <!-- Credit link (Do not remove) -->
+    <span>
+      <a href="https://github.com/YOUR_REPO_LINK" 
+         target="_blank" 
+         rel="noopener" 
+         style="color:var(--accent);text-decoration:none;">
+         Acadpro V1
+      </a>
+    </span>
+
+  </div>
+</footer>
+</main>
+
+
+<!-- Modal -->
+<div class="modal-overlay" id="modal"><div class="modal-bg" id="modalBg"></div><div class="modal-box"><button class="modal-close" id="modalClose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button><div class="modal-body" id="modalContent"></div></div></div>
+
+<script>
+// Theme
+(function(){const b=document.body,btn=document.getElementById('themeToggle'),icon=document.getElementById('themeIcon');const s=localStorage.getItem('theme')||'light';b.setAttribute('data-theme',s);ui(s);btn.addEventListener('click',()=>{const n=b.getAttribute('data-theme')==='dark'?'light':'dark';b.setAttribute('data-theme',n);localStorage.setItem('theme',n);ui(n)});function ui(t){icon.innerHTML=t==='dark'?'<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>':'<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>';}})();
+document.getElementById('year').textContent=new Date().getFullYear();
+
+// Reveal
+(function(){const o=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('vis')})},{threshold:0.08});document.querySelectorAll('.reveal').forEach(el=>o.observe(el))})();
+
+// Expertise stagger
+(function(){const tags=document.querySelectorAll('.skill-tag');const o=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){const i=[...tags].indexOf(x.target);setTimeout(()=>x.target.classList.add('vis'),i*55)}})},{threshold:0.1});tags.forEach(t=>o.observe(t))})();
+
+// Photo Carousel
+(function(){const track=document.getElementById('photoTrack'),slides=track.children,dots=document.querySelectorAll('.photo-dot');let idx=0,auto=true;function show(i){idx=((i%slides.length)+slides.length)%slides.length;track.style.transform='translateX('+-idx*100+'%)';[...slides].forEach((s,j)=>s.classList.toggle('active',j===idx));dots.forEach((d,j)=>d.classList.toggle('active',j===idx))}document.getElementById('photoNext').addEventListener('click',()=>{auto=false;show(idx+1)});document.getElementById('photoPrev').addEventListener('click',()=>{auto=false;show(idx-1)});dots.forEach(d=>d.addEventListener('click',()=>{auto=false;show(+d.dataset.i)}));document.getElementById('photoCarousel').addEventListener('mouseenter',()=>auto=false);document.getElementById('photoCarousel').addEventListener('mouseleave',()=>auto=true);setInterval(()=>{if(auto)show(idx+1)},4500)})();
+
+// Tabs
+(function(){document.querySelectorAll('.tab-btn').forEach(btn=>{btn.addEventListener('click',()=>{const t=btn.dataset.tab;btn.closest('.tabs-container').querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));btn.closest('.tabs-container').querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));btn.classList.add('active');document.getElementById('tab-'+t).classList.add('active')})})})();
+
+// Share Dropdown
+(function(){const svgCopy='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>';const svgFb='<svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>';const svgLi='<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>';const svgX='<svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>';
+document.querySelectorAll('.share-toggle').forEach(btn=>{const wrap=btn.closest('.share-wrap'),dd=wrap.querySelector('.share-dropdown'),title=btn.dataset.title||'',url=btn.dataset.url||'';dd.innerHTML='<button class="share-option copy-link" data-url="'+url+'">'+svgCopy+' Copy link</button><a class="share-option" href="https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(url)+'" target="_blank" rel="noopener">'+svgFb+' Facebook</a><a class="share-option" href="https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(url)+'" target="_blank" rel="noopener">'+svgLi+' LinkedIn</a><a class="share-option" href="https://twitter.com/intent/tweet?text='+encodeURIComponent(title)+'&url='+encodeURIComponent(url)+'" target="_blank" rel="noopener">'+svgX+' X (Twitter)</a>';btn.addEventListener('click',e=>{e.stopPropagation();document.querySelectorAll('.share-wrap.open').forEach(w=>{if(w!==wrap)w.classList.remove('open')});wrap.classList.toggle('open')});dd.querySelector('.copy-link').addEventListener('click',e=>{e.stopPropagation();navigator.clipboard.writeText(url).then(()=>{const el=dd.querySelector('.copy-link');el.classList.add('copy-done');el.innerHTML=svgCopy+' Copied!';setTimeout(()=>{el.classList.remove('copy-done');el.innerHTML=svgCopy+' Copy link'},2000)})})});document.addEventListener('click',()=>document.querySelectorAll('.share-wrap.open').forEach(w=>w.classList.remove('open')))})();
+
+// Video — YouTube IFrame Player API
+var ytReady=false,ytPlayer=null;
+var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
+window.onYouTubeIframeAPIReady=function(){ytReady=true};
+(function(){document.querySelectorAll('.video-card').forEach(c=>{c.addEventListener('click',()=>{var s=c.dataset.video;if(!s)return;var vid=s.split('/embed/')[1];if(!vid)return;vid=vid.split('?')[0];openModal('<div id="ytPlayerWrap" style="position:relative;padding-top:56.25%;background:#000;border-radius:0"><div id="ytPlayerDiv" style="position:absolute;inset:0"></div></div>');setTimeout(()=>{if(ytReady&&window.YT){if(ytPlayer&&ytPlayer.destroy)try{ytPlayer.destroy()}catch(e){}ytPlayer=new YT.Player('ytPlayerDiv',{width:'100%',height:'100%',videoId:vid,playerVars:{autoplay:1,rel:0,modestbranding:1,playsinline:1},events:{onError:function(e){document.getElementById('ytPlayerWrap').innerHTML='<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;position:absolute;inset:0;color:#fff;gap:1rem"><p>Unable to play inline</p><a href="https://www.youtube.com/watch?v='+vid+'" target="_blank" rel="noopener" style="padding:0.6rem 1.2rem;border-radius:10px;background:#ff0000;color:#fff;text-decoration:none;font-weight:700">Watch on YouTube</a></div>'}}})}else{document.getElementById('ytPlayerWrap').innerHTML='<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;position:absolute;inset:0;color:#fff;gap:1rem"><p>Loading player...</p><a href="https://www.youtube.com/watch?v='+vid+'" target="_blank" rel="noopener" style="padding:0.6rem 1.2rem;border-radius:10px;background:#ff0000;color:#fff;text-decoration:none;font-weight:700">Watch on YouTube</a></div>'}},300)})})})();
+
+// Modal
+function openModal(h){var m=document.getElementById('modal');document.getElementById('modalContent').innerHTML=h;m.classList.add('open')}function closeModal(){if(ytPlayer&&ytPlayer.destroy)try{ytPlayer.destroy()}catch(e){}ytPlayer=null;var mc=document.getElementById('modalContent');mc.innerHTML='';document.getElementById('modal').classList.remove('open')}document.getElementById('modalBg').addEventListener('click',closeModal);document.getElementById('modalClose').addEventListener('click',closeModal);document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+
+// BibTeX
+function downloadBib(e){const b=e.currentTarget.getAttribute('data-bib');if(!b)return;const blob=new Blob([b],{type:'text/plain;charset=utf-8'});const u=URL.createObjectURL(blob);const a=document.createElement('a');a.href=u;a.download='citation.bib';document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(u);a.remove()},500)}
+</script>
+</body>
+</html>

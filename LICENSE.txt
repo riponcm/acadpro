@@ -1,0 +1,113 @@
+Acadpro Portfolio Template — License
+
+Copyright (c) 2026 Ripon Chandra Malo
+All rights reserved.
+
+Repository: https://github.com/riponcm/acadpro
+
+
+1. PERMITTED USE
+
+   You are granted a non-exclusive, non-transferable right to:
+
+   a. Use this template for your own personal or academic portfolio.
+   b. Modify all content, colors, fonts, images, sections, layout, and
+      structure to suit your needs.
+   c. Deploy the original or modified version on any hosting platform
+      including but not limited to Netlify, GitHub Pages, Vercel, or
+      self-hosted servers.
+   d. Use this template for non-commercial purposes without prior
+      written permission from the author.
+
+
+2. REQUIRED ATTRIBUTION
+
+   Any published deployment of this template, whether modified or
+   unmodified, must satisfy BOTH of the following conditions:
+
+   a. FOOTER LINK — The footer of every published page must contain a
+      visible, functional hyperlink pointing to the original GitHub
+      repository:
+
+      https://github.com/riponcm/acadpro
+
+      The wording and visual styling of the credit line may be changed,
+      but the link itself must remain present, clickable, and pointing
+      to the correct URL.
+
+   b. SOURCE COMMENT — The copyright comment block at the top of the
+      HTML source code must not be removed or altered in a way that
+      obscures the original author or repository URL.
+
+
+3. RESTRICTIONS
+
+   You may NOT:
+
+   a. Sell this template or any modified version of it, whether as a
+      standalone product, as part of a bundle, as a theme, or as a
+      paid service offering.
+
+   b. Redistribute this template on any marketplace, template directory,
+      theme store, or file-sharing platform without explicit written
+      permission from the author.
+
+   c. Remove the footer repository link from any published deployment.
+
+   d. Claim this work as your own original creation.
+
+   e. Use this template in any commercial product or service that
+      generates revenue directly from the template itself.
+
+   f. Sublicense, resell, or transfer these usage rights to any third
+      party.
+
+
+4. CUSTOM DESIGN AND COMMERCIAL LICENSING
+
+   If you require a version of this template without the attribution
+   requirement, or if you wish to use it in a commercial context,
+   please contact the author to discuss a commercial license.
+
+   Contact: Ripon Chandra Malo
+   GitHub:  https://github.com/riponcm
+
+
+5. NO WARRANTY
+
+   This template is provided "as is" without warranty of any kind,
+   express or implied, including but not limited to the warranties of
+   merchantability, fitness for a particular purpose, and non-
+   infringement. In no event shall the author be liable for any claim,
+   damages, or other liability arising from the use of this template.
+
+
+6. ENFORCEMENT
+
+   Violations of these terms may result in:
+
+   a. A request to add proper attribution or remove the deployment.
+   b. A DMCA takedown notice filed with the hosting provider.
+   c. Any other legal remedies available under applicable law.
+
+
+7. TERMINATION
+
+   Your rights under this license terminate automatically if you fail
+   to comply with any of the terms stated above. Upon termination, you
+   must remove all published deployments that do not comply with the
+   required attribution.
+
+
+8. GOVERNING LAW
+
+   This license shall be governed by and construed in accordance with
+   applicable copyright law.
+
+
+---
+
+Summary: Use it freely. Customize everything. Keep the footer link to
+the original repository. Do not sell it. Do not remove attribution.
+
+For questions about permitted use, contact the author before proceeding.
