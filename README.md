@@ -76,7 +76,7 @@ The design follows an editorial aesthetic with warm muted tones, refined typogra
 ```
 ```
 ## Features
-```
+
 ### Design
 
 - Clean editorial typography using Playfair Display and Source Sans 3
@@ -107,7 +107,7 @@ The design follows an editorial aesthetic with warm muted tones, refined typogra
 - Zero JavaScript frameworks -- pure vanilla JS
 - No cookies, no analytics, no tracking
 
-```
+
 
 ## Deployment
 
