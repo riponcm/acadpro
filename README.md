@@ -228,12 +228,6 @@ This project is released under a restricted license. Please read the following t
 - You may NOT claim this work as your own original creation.
 - You may NOT use this template in any commercial product or service that generates revenue directly from the template itself.
 
-### Summary
-
-> **Use it freely. Customize everything. Keep the footer link. Do not sell it.**
-
-Violations of these terms may result in a takedown request. If you are unsure whether your intended use is permitted, please contact the author before proceeding.
-
 ---
 
 ## File Structure
@@ -274,7 +268,7 @@ Designed by **Ripon Chandra Malo**
 > **If this project helped you, consider buying me a coffee.**
 <div align="center">
 
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy_Me_a_Coffee-2d5a7b?style=for-the-badge&labelColor=ffffff&logo=buymeacoffee&logoColor=2d5a7b)](https://www.buymeacoffee.com/riponce)            [![Star This Repo](https://img.shields.io/badge/Give_a_Star-2d5a7b?style=for-the-badge&labelColor=ffffff&logo=github&logoColor=2d5a7b)](https://github.com/riponcm/acadpro)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy_Me_a_Coffee-2d5a7b?style=for-the-badge&labelColor=ffffff&logo=buymeacoffee&logoColor=2d5a7b)](https://www.buymeacoffee.com/riponce)             [![Star This Repo](https://img.shields.io/badge/Give_a_Star-2d5a7b?style=for-the-badge&labelColor=ffffff&logo=github&logoColor=2d5a7b)](https://github.com/riponcm/acadpro)
 
 </div>
 
