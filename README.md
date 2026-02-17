@@ -274,7 +274,7 @@ Designed by **Ripon Chandra Malo**
 
 <p align="center">
   <a href="#">
-      <img src="https://api.visitorbadge.io/api/VisitorHit?user=riponcm&repo=github-visitors-badge&countColor=%237B1E7A" />
+      <img src="https://api.visitorbadge.io/api/VisitorHit?user=riponcm&repo=acadpro-badge&countColor=%237B1E7A" />
    </a>
 </p>
 
