@@ -45,29 +45,6 @@ This is a complete, production-ready academic portfolio website. All content liv
 The design follows an editorial aesthetic with warm muted tones, refined typography, and subtle animations. It includes light and dark mode, responsive layout, and all interactive features built from scratch.
 
 ---
-
-## Screenshots
-
-**Light Mode**
-
-![Light Mode Screenshot](screenshots/light-mode.png)
-
-**Dark Mode**
-
-![Dark Mode Screenshot](screenshots/dark-mode.png)
-
-**Open to Work Banner**
-
-![Hiring Banner](screenshots/banner.png)
-
-**Expertise Cloud**
-
-![Expertise](screenshots/expertise.png)
-
-**Experience and Education Tabs**
-
-![Tabs](screenshots/tabs.png)
-
 ---
 
 ## Page Structure
