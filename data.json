@@ -1,0 +1,465 @@
+{
+  "profile": {
+    "name": "Dr. R.C. Malo",
+    "initials": "RC",
+    "tagline": "ML · GEO · SciML Research",
+    "headline": "Designing inclusive interfaces & reproducible research",
+    "bio": "I'm <strong>Dr. R.C.Malo</strong> — I build usable systems, publish reproducible work, and teach students how to design responsibly. This portfolio showcases my projects, publications, and teaching.",
+    "role": "Assistant Professor",
+    "affiliation": "University of Utah",
+    "photos": [
+      {
+        "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhv3ARxzrTdm5d8WmZRJpuvfW9Lz5UBl0PsHthzN4Xcv3L4zGEPlyT654uEC2dqdDnS0kGZa1EYBK3eIjzhY9KQZCNX_-TNJpgkZYlFECsZ6C4ndpIZhYJsHS7WjsCSzI8GHk_r6oBCwr2MFD_S9gThvVDiTBxZqbBM5QHaGNEC1lZPX9OzfxiIkSwvjo/s2048/IMG_2234.jpg",
+        "alt": "Portrait"
+      },
+      {
+        "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDnPW0npgfHE3SRGMN7Yl0FlV8PheXWuTOioHTGXxld9wfxHTnWraDcTrkN0sq4fxjpsIYJebpJVQu5J23Ge6isguhF1l1k0XArjvHAmzlNkDIPKSr-Lwfa4x_9UR01jFYv7KPS9D52tN94ANzksoer4H9v5vxSUM-9ghRCUOKKxEbRW0Nlt2QlWNON3Q/s320/IMG_4502.jpg",
+        "alt": "Headshot"
+      },
+      {
+        "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAfZT8IiG1wH3bdfPXUVci_AQtM1icfcx9KpT4lyLATkYWiPvhkcmPlbWk44G8cR8a9TRw6aGpkXJv57HVwDfJy4zI6yPnv0yT3Q4mqt0NtvpaqUZU8vJZTnw5BoAdheoY1vTMe7Qzo7KqvQPL62QfTXEcflC6tXHQ0dJdThobrGsKtO42p5D7puKdCac/s320/like.png",
+        "alt": "Professional"
+      }
+    ]
+  },
+  "hiring": {
+    "enabled": true,
+    "title": "Open to Collaboration & Hiring",
+    "description": "I'm actively seeking research collaborators, postdoctoral fellows, and motivated graduate students interested in human-computer interaction, accessibility, and reproducible research methods. If you share a passion for inclusive design and rigorous experimentation, let's build something meaningful together."
+  },
+  "lab": {
+    "title": "Advanced Systems & Learning Lab",
+    "description": "Our lab focuses on building usable systems, publishing reproducible work, and designing responsibly. We explore the intersection of human-computer interaction, machine learning, and accessibility to solve real-world problems. We prioritize hands-on projects, rigorous experiments, and open-source contributions.",
+    "directorName": "Dr. R.C. Malo",
+    "directorRole": "Lab Director & Principal Investigator",
+    "members": [
+      {
+        "roleGroup": "Postdoctoral Researchers",
+        "people": [
+          {"name": "Dr. Alice Smith", "role": "Postdoc, Machine Learning", "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop"},
+          {"name": "Dr. Bob Jones", "role": "Postdoc, HCI", "image": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=150&h=150&fit=crop"}
+        ]
+      },
+      {
+        "roleGroup": "Ph.D. Students",
+        "people": [
+          {"name": "Charlie Davis", "role": "Ph.D. Candidate", "image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop"},
+          {"name": "Diana Evans", "role": "Ph.D. Student", "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop"}
+        ]
+      },
+      {
+        "roleGroup": "Master's Students",
+        "people": [
+          {"name": "Evan Frank", "role": "M.S. Student", "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop"},
+          {"name": "Fiona Green", "role": "M.S. Student", "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop"}
+        ]
+      },
+      {
+        "roleGroup": "Undergraduate Researchers",
+        "people": [
+          {"name": "George Harris", "role": "B.S. Student", "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop"},
+          {"name": "Hannah Irwin", "role": "B.S. Student", "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop"}
+        ]
+      }
+    ]
+  },
+  "expertise": [
+    {
+      "name": "Human-Computer Interaction",
+      "level": "expert"
+    },
+    {
+      "name": "Accessibility",
+      "level": "expert"
+    },
+    {
+      "name": "Reproducible Research",
+      "level": "expert"
+    },
+    {
+      "name": "User Study Design",
+      "level": "advanced"
+    },
+    {
+      "name": "Statistical Analysis",
+      "level": "advanced"
+    },
+    {
+      "name": "Python",
+      "level": "advanced"
+    },
+    {
+      "name": "R / RStudio",
+      "level": "advanced"
+    },
+    {
+      "name": "React / JavaScript",
+      "level": "intermediate"
+    },
+    {
+      "name": "Figma & Sketch",
+      "level": "intermediate"
+    },
+    {
+      "name": "Machine Learning",
+      "level": "intermediate"
+    },
+    {
+      "name": "Assistive Technology",
+      "level": "advanced"
+    },
+    {
+      "name": "LaTeX",
+      "level": "intermediate"
+    },
+    {
+      "name": "Data Visualization",
+      "level": "advanced"
+    },
+    {
+      "name": "Docker & CI/CD",
+      "level": "intermediate"
+    },
+    {
+      "name": "Inclusive Design",
+      "level": "expert"
+    },
+    {
+      "name": "Natural Language Processing",
+      "level": "intermediate"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Assistive UX Toolkit",
+      "subtitle": "Tooling & patterns for inclusive interfaces",
+      "year": "2025",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=300&fit=crop",
+      "description": "A toolkit for designers & developers to build accessible UI components and test assistive workflows.",
+      "github": "https://github.com/example/assistive-ux",
+      "url": "https://example.edu/assistive-ux"
+    },
+    {
+      "title": "Repro Pipelines",
+      "subtitle": "Workflows for reproducible experiments",
+      "year": "2024",
+      "image": "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=600&h=300&fit=crop",
+      "description": "Automated scripts and containerized environments that make experiments reproducible.",
+      "github": "https://github.com/example/repro-pipelines",
+      "url": "https://example.edu/repro-pipelines"
+    },
+    {
+      "title": "Study Portal",
+      "subtitle": "Participant recruitment & consent",
+      "year": "2023",
+      "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=300&fit=crop",
+      "description": "A secure, privacy-preserving portal to manage research participants and consent forms.",
+      "github": "https://github.com/example/study-portal",
+      "url": "https://example.edu/study-portal"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Improving soft soil using high vacuum densification method in the laboratory",
+      "authors": "Ripon Chandra Malo and Mehedi Ahmed Ansary",
+      "highlightAuthor": "A. Researcher",
+      "venue": "Arabian Journal of Geosciences",
+      "year": 2025,
+      "type": "journal",
+      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=300&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=200&h=200&fit=crop",
+      "description": "This study presents a controlled laboratory evaluation of the high vacuum densification method (HVDM) for improving extremely soft soil using a 1 g physical model. Following several trials on the phys...",
+      "pdfUrl": "https://link.springer.com/article/10.1007/s12517-025-12278-2",
+      "url": "https://link.springer.com/article/10.1007/s12517-025-12278-2",
+      "citations": 0,
+      "bibtex": "@article{ripon2025,title={Improving soft soil using high vacuum densification method in the laboratory},author={Ripon Chandra Malo and Mehedi Ahmed Ansary},year={2025}}"
+    },
+    {
+      "title": "Human-Centered Pipelines for Reproducible Research",
+      "authors": "A. Researcher, B. Coauthor",
+      "highlightAuthor": "A. Researcher",
+      "venue": "Journal of Examples, Vol. 12, Issue 3",
+      "year": 2024,
+      "type": "journal",
+      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=300&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=200&fit=crop",
+      "description": "Proposed a reproducible workflow for HCI experiments integrating participant privacy checks and automated analysis pipelines.",
+      "pdfUrl": "#",
+      "url": "https://example.edu/paper1",
+      "citations": 34,
+      "bibtex": "@article{researcher2024,title={Human-Centered Pipelines},author={A. Researcher and B. Coauthor},journal={Journal of Examples},year={2024}}"
+    },
+    {
+      "title": "Privacy-Preserving Data Collection in User Studies",
+      "authors": "A. Researcher, E. Privacy, F. Methods",
+      "highlightAuthor": "A. Researcher",
+      "venue": "ACM Transactions on Accessible Computing, Vol. 8",
+      "year": 2023,
+      "type": "journal",
+      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f2?w=600&h=300&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1563986768609-322da13575f2?w=200&h=200&fit=crop",
+      "description": "Introduced a framework for collecting sensitive user data while maintaining participant anonymity and meeting IRB compliance standards.",
+      "pdfUrl": "#",
+      "url": "https://example.edu/paper4",
+      "citations": 18,
+      "bibtex": "@article{researcher2023,title={Privacy-Preserving Data Collection},author={A. Researcher and E. Privacy and F. Methods},journal={ACM TACCESS},year={2023}}"
+    },
+    {
+      "title": "Experimental Investigation of High Vacuum Densification Method",
+      "authors": "Ripon Chandra Malo",
+      "highlightAuthor": "A. Researcher",
+      "venue": "",
+      "year": 2023,
+      "type": "conference",
+      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=300&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=200&h=200&fit=crop",
+      "description": "Bangladesh is a densely populated country with a 32% coastal area. Many coastal regions  of Bangladesh have very soft to soft soil with poor geotechnical properties such as very low bearing capacity, ...",
+      "pdfUrl": "http://lib.buet.ac.bd:8080/xmlui/handle/123456789/6609",
+      "url": "http://lib.buet.ac.bd:8080/xmlui/handle/123456789/6609",
+      "citations": 0,
+      "bibtex": "@inproceedings{ripon2023,title={Experimental Investigation of High Vacuum Densification Method},author={Ripon Chandra Malo},year={2023}}"
+    },
+    {
+      "title": "Assistive Interactions in Standard UI Patterns",
+      "authors": "C. Author, A. Researcher",
+      "highlightAuthor": "A. Researcher",
+      "venue": "Proceedings of CHI Conference on Human Factors",
+      "year": 2022,
+      "type": "conference",
+      "image": "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=600&h=300&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=200&h=200&fit=crop",
+      "description": "Explores how assistive feedback can be integrated into standard UI patterns without increasing cognitive load for sighted users.",
+      "pdfUrl": "#",
+      "url": "https://example.edu/paper2",
+      "citations": 52,
+      "bibtex": "@inproceedings{author2022,title={Assistive Interactions},author={C. Author and A. Researcher},booktitle={Proc. CHI},year={2022}}"
+    },
+    {
+      "title": "Multimodal Feedback for Screen Reader Users",
+      "authors": "A. Researcher, G. Haptics",
+      "highlightAuthor": "A. Researcher",
+      "venue": "Proceedings of ASSETS Conference on Assistive Technologies",
+      "year": 2021,
+      "type": "conference",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=300&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=200&h=200&fit=crop",
+      "description": "Evaluated haptic and auditory feedback modalities for screen reader navigation in complex web applications.",
+      "pdfUrl": "#",
+      "url": "https://example.edu/paper5",
+      "citations": 27,
+      "bibtex": "@inproceedings{researcher2021b,title={Multimodal Feedback for Screen Reader Users},author={A. Researcher and G. Haptics},booktitle={Proc. ASSETS},year={2021}}"
+    },
+    {
+      "title": "Inclusive Design Patterns for Multi-Modal Applications",
+      "authors": "A. Researcher, D. Analyst",
+      "highlightAuthor": "A. Researcher",
+      "venue": "Workshop on Inclusive UX, co-located with CHI",
+      "year": 2021,
+      "type": "workshop",
+      "image": "https://images.unsplash.com/photo-1558403194-611308249627?w=600&h=300&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1558403194-611308249627?w=200&h=200&fit=crop",
+      "description": "Catalogued 12 design patterns for multi-modal assistive applications with implementation guidelines and evaluation criteria.",
+      "pdfUrl": "#",
+      "url": "https://example.edu/paper3",
+      "citations": 11,
+      "bibtex": "@inproceedings{researcher2021,title={Inclusive Design Patterns},author={A. Researcher and D. Analyst},booktitle={Workshop on Inclusive UX},year={2021}}"
+    },
+    {
+      "title": "Improvement of Geotechnical Properties of Expansive Soil by Lime and Polypropylene Fiber Material",
+      "authors": "Md Monir Hossain and Ripon Chandro Malo",
+      "highlightAuthor": "A. Researcher",
+      "venue": "Journal of Geotechnical Studies",
+      "year": 2021,
+      "type": "journal",
+      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=300&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=200&h=200&fit=crop",
+      "description": "Improvement of the Geotechnical properties of expansive soils by mixing Lime and Polypropylene Fibers is the main concentration of this research. For this research purpose, expansive soil samples were...",
+      "pdfUrl": "https://www.researchgate.net/profile/Ripon-Malo/publication/352994512_Improvement_of_Geotechnical_Properties_of_Expansive_Soil_by_Lime_and_Polypropylene_Fiber_Material/links/60e6e8631c28af3458530678/Improvement-of-Geotechnical-Properties-of-Expansive-Soil-by-Lime-and-Polypropylene-Fiber-Material.pdf",
+      "url": "https://www.researchgate.net/profile/Ripon-Malo/publication/352994512_Improvement_of_Geotechnical_Properties_of_Expansive_Soil_by_Lime_and_Polypropylene_Fiber_Material/links/60e6e8631c28af3458530678/Improvement-of-Geotechnical-Properties-of-Expansive-Soil-by-Lime-and-Polypropylene-Fiber-Material.pdf",
+      "citations": 1,
+      "bibtex": "@article{md2021,title={Improvement of Geotechnical Properties of Expansive Soil by Lime and Polypropylene Fiber Material},author={Md Monir Hossain and Ripon Chandro Malo},year={2021}}"
+    },
+    {
+      "title": "Correlations between CPT, SPT and Soil Parameters for Khulna, Bangladesh",
+      "authors": "Md Monir Hossain and Nasima Sultana and Ripon Chandro Malo",
+      "highlightAuthor": "A. Researcher",
+      "venue": "Journal of Geotechnical Studies",
+      "year": 2020,
+      "type": "journal",
+      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=300&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=200&h=200&fit=crop",
+      "description": "Soil is naturally heterogeneous and non-uniform materials because it is made up of different types of matter. Understanding of soil parameters is one of the most complex tasks in geotechnical engineer...",
+      "pdfUrl": "https://www.researchgate.net/profile/Nasima-Sultana/publication/340950240_Correlations_between_CPT_SPT_and_Soil_Parameters_for_Khulna_Bangladesh/links/5ea6f9ac299bf1125612bf2e/Correlations-between-CPT-SPT-and-Soil-Parameters-for-Khulna-Bangladesh.pdf",
+      "url": "https://www.researchgate.net/profile/Nasima-Sultana/publication/340950240_Correlations_between_CPT_SPT_and_Soil_Parameters_for_Khulna_Bangladesh/links/5ea6f9ac299bf1125612bf2e/Correlations-between-CPT-SPT-and-Soil-Parameters-for-Khulna-Bangladesh.pdf",
+      "citations": 6,
+      "bibtex": "@article{md2020,title={Correlations between CPT, SPT and Soil Parameters for Khulna, Bangladesh},author={Md Monir Hossain and Nasima Sultana and Ripon Chandro Malo},year={2020}}"
+    },
+    {
+      "title": "SOIL IMPROVEMENT USING LIME AND POLYPROPYLENE FIBERS",
+      "authors": "M. Hossain and Md and RC Malo & Safi",
+      "highlightAuthor": "A. Researcher",
+      "venue": "",
+      "year": 2018,
+      "type": "conference",
+      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=300&fit=crop",
+      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=200&h=200&fit=crop",
+      "description": "",
+      "pdfUrl": "#",
+      "url": "#",
+      "citations": 0,
+      "bibtex": "@inproceedings{m.2018,title={SOIL IMPROVEMENT USING LIME AND POLYPROPYLENE FIBERS},author={M. Hossain and Md and RC Malo & Safi},year={2018}}"
+    }
+  ],
+  "teaching": [
+    {
+      "title": "Lecture 1 — Intro to HCI",
+      "subtitle": "Syllabus & overview",
+      "videoUrl": "https://www.youtube.com/embed/Gl5MVtD3flQ",
+      "bgColor": "#2d5a7b"
+    },
+    {
+      "title": "Lecture 2 — Accessibility",
+      "subtitle": "Designing for diverse users",
+      "videoUrl": "https://www.youtube.com/embed/Gl5MVtD3flQ",
+      "bgColor": "#5a7a6a"
+    },
+    {
+      "title": "Lecture 3 — Research Methods",
+      "subtitle": "Study design & reproducibility",
+      "videoUrl": "https://www.youtube.com/embed/Gl5MVtD3flQ",
+      "bgColor": "#c8956c"
+    },
+    {
+      "title": "Lecture 4 — Tools",
+      "subtitle": "Analysis & visualization",
+      "videoUrl": "https://www.youtube.com/embed/Gl5MVtD3flQ",
+      "bgColor": "#1a1a2e"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Assistant Professor",
+      "organization": "University of Utah — Dept. of Civil Engineering",
+      "description": "Leading research in HCI, accessibility, and reproducible methods. Teaching undergraduate and graduate courses.",
+      "years": "2022 — Present",
+      "icon": "monitor"
+    },
+    {
+      "title": "Postdoctoral Researcher",
+      "organization": "National Institute of Standards — HCI Division",
+      "description": "Developed accessibility evaluation frameworks and published 4 journal papers on inclusive interface design.",
+      "years": "2020 — 2022",
+      "icon": "globe"
+    },
+    {
+      "title": "Research Assistant",
+      "organization": "University of Utah — Interactive Systems Lab",
+      "description": "Contributed to 3 major research projects on assistive technology and user study design.",
+      "years": "2016 — 2020",
+      "icon": "pencil"
+    }
+  ],
+  "education": [
+    {
+      "title": "Ph.D. in Human-Computer Interaction",
+      "organization": "University of Utah",
+      "description": "Dissertation: \"Designing Inclusive Pipelines for Reproducible HCI Research.\" Advised by Prof. Example.",
+      "years": "2016 — 2020",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Utah_Utes_-_U_logo.svg/3840px-Utah_Utes_-_U_logo.svg.png"
+    },
+    {
+      "title": "M.S. in Computer Science",
+      "organization": "Massachusetts Institute of Technology",
+      "description": "Specialization in AI and Human Factors. Thesis on adaptive user interfaces.",
+      "years": "2014 — 2016",
+      "logo": "https://download.logo.wine/logo/Massachusetts_Institute_of_Technology/Massachusetts_Institute_of_Technology-Logo.wine.png"
+    },
+    {
+      "title": "B.S. in Cognitive Science",
+      "organization": "University of California, Berkeley",
+      "description": "Minor in CS. Graduated with honors. Capstone on accessibility in mobile apps.",
+      "years": "2010 — 2014",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Seal_of_University_of_California%2C_Berkeley.svg/150px-Seal_of_University_of_California%2C_Berkeley.svg.png"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Best Paper Award",
+      "subtitle": "Conference X, 2024",
+      "url": "https://example.edu/best-paper",
+      "icon": "award",
+      "iconColor": "warm"
+    },
+    {
+      "title": "Demo Prize",
+      "subtitle": "Symposium Y, 2023",
+      "url": "https://example.edu/demo-prize",
+      "icon": "star",
+      "iconColor": "warm"
+    },
+    {
+      "title": "Graduate Fellowship",
+      "subtitle": "Foundation Z, 2021",
+      "url": "https://example.edu/fellowship",
+      "icon": "cap",
+      "iconColor": "warm"
+    },
+    {
+      "title": "UX Research Certificate",
+      "subtitle": "Provider A, 2023",
+      "url": "https://example.edu/ux-cert",
+      "icon": "monitor",
+      "iconColor": "accent"
+    },
+    {
+      "title": "Data Privacy Training",
+      "subtitle": "Provider B, 2022",
+      "url": "https://example.edu/privacy",
+      "icon": "shield",
+      "iconColor": "sage"
+    },
+    {
+      "title": "Open Source Contributor",
+      "subtitle": "Project C, 2022",
+      "url": "https://example.edu/oss",
+      "icon": "code",
+      "iconColor": "accent"
+    }
+  ],
+  "contact": {
+    "email": "rcmalo@university.edu",
+    "phone": "+1 (801) 555‑0199",
+    "office": "Room 312, Merrill Engineering Bldg",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.5!2d-111.84!3d40.76!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sUniversity+of+Utah!5e0!3m2!1sen!2sus",
+    "socials": [
+      {
+        "platform": "google-scholar",
+        "url": "https://scholar.google.com/citations?user=EXAMPLE"
+      },
+      {
+        "platform": "github",
+        "url": "https://github.com/example"
+      },
+      {
+        "platform": "linkedin",
+        "url": "https://linkedin.com/in/example"
+      },
+      {
+        "platform": "orcid",
+        "url": "https://orcid.org/0000-0000-0000-0000"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "Dr. R.C. Malo",
+    "repoUrl": "https://github.com/riponcm/acadpro",
+    "designedBy": "Ripon Chandra Malo",
+    "version": "V2.0.0"
+  },
+  "settings": {
+    "publicationStyle": "alt",
+    "scholarId": "7-QY6VEAAAAJ",
+    "_theme_options": "Available themes: 'BH' (default light), 'blue' (academic light blue), 'dark'",
+    "theme": "blue"
+  }
+}
