@@ -9,23 +9,37 @@
     "affiliation": "University of Utah",
     "photos": [
       {
-        "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhv3ARxzrTdm5d8WmZRJpuvfW9Lz5UBl0PsHthzN4Xcv3L4zGEPlyT654uEC2dqdDnS0kGZa1EYBK3eIjzhY9KQZCNX_-TNJpgkZYlFECsZ6C4ndpIZhYJsHS7WjsCSzI8GHk_r6oBCwr2MFD_S9gThvVDiTBxZqbBM5QHaGNEC1lZPX9OzfxiIkSwvjo/s2048/IMG_2234.jpg",
-        "alt": "Portrait"
+        "src": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Research landscape"
       },
       {
-        "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDnPW0npgfHE3SRGMN7Yl0FlV8PheXWuTOioHTGXxld9wfxHTnWraDcTrkN0sq4fxjpsIYJebpJVQu5J23Ge6isguhF1l1k0XArjvHAmzlNkDIPKSr-Lwfa4x_9UR01jFYv7KPS9D52tN94ANzksoer4H9v5vxSUM-9ghRCUOKKxEbRW0Nlt2QlWNON3Q/s320/IMG_4502.jpg",
-        "alt": "Headshot"
+        "src": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Laboratory collaboration"
       },
       {
-        "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAfZT8IiG1wH3bdfPXUVci_AQtM1icfcx9KpT4lyLATkYWiPvhkcmPlbWk44G8cR8a9TRw6aGpkXJv57HVwDfJy4zI6yPnv0yT3Q4mqt0NtvpaqUZU8vJZTnw5BoAdheoY1vTMe7Qzo7KqvQPL62QfTXEcflC6tXHQ0dJdThobrGsKtO42p5D7puKdCac/s320/like.png",
-        "alt": "Professional"
+        "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80",
+        "alt": "Field research"
       }
     ]
+  },
+  "hero": {
+    "welcomeTitle": "Welcome",
+    "studentTitle": "Student & Researcher Frontend",
+    "welcomeText": "This version is tailored for PhD students, MSc students, postdocs, and research-focused early-career academics who want a stronger research identity on the homepage."
   },
   "hiring": {
     "enabled": true,
     "title": "Open to Collaboration & Hiring",
     "description": "I'm actively seeking research collaborators, postdoctoral fellows, and motivated graduate students interested in human-computer interaction, accessibility, and reproducible research methods. If you share a passion for inclusive design and rigorous experimentation, let's build something meaningful together."
+  },
+  "opportunities": {
+    "title": "Open to Collaborate",
+    "summary": "Seeking PhD, MSc, and postdoctoral opportunities, and also open to collaborative research, student supervision support, and interdisciplinary academic partnerships.",
+    "positions": [
+      "Seeking PhD position",
+      "Seeking MSc position",
+      "Seeking Postdoc position"
+    ]
   },
   "lab": {
     "title": "Advanced Systems & Learning Lab",
@@ -129,13 +143,224 @@
       "level": "intermediate"
     }
   ],
+  "researchProfile": {
+    "title": "Research Highlights & Interests",
+    "summary": "A student-focused research section that surfaces your main interests, strongest contributions, and the themes you want visitors to notice first.",
+    "interests": [
+      "Geotechnical Engineering",
+      "Soft Soil Improvement",
+      "Vacuum Densification",
+      "Experimental Soil Mechanics",
+      "Ground Improvement",
+      "Data-Driven Geotechnics"
+    ],
+    "metrics": [
+      {
+        "label": "Publications",
+        "value": "8+"
+      },
+      {
+        "label": "Research Themes",
+        "value": "6"
+      },
+      {
+        "label": "Teaching Samples",
+        "value": "4"
+      },
+      {
+        "label": "Awards & Certificates",
+        "value": "6"
+      }
+    ],
+    "highlights": [
+      {
+        "title": "Technical Skills & Frameworks",
+        "description": "Software, tools, and research workflows presented in a more compact academic style.",
+        "items": [
+          {
+            "name": "Python",
+            "icon": "code",
+            "level": "expert",
+            "note": "Data analysis, automation, and research scripting."
+          },
+          {
+            "name": "MATLAB",
+            "icon": "monitor",
+            "level": "advanced",
+            "note": "Numerical modeling and engineering computation."
+          },
+          {
+            "name": "LaTeX",
+            "icon": "bib",
+            "level": "advanced",
+            "note": "Academic writing, thesis preparation, and publication formatting."
+          },
+          {
+            "name": "GIS & Mapping Tools",
+            "icon": "globe",
+            "level": "learning",
+            "note": "Spatial data interpretation and field-oriented visualization."
+          }
+        ]
+      },
+      {
+        "title": "Area of Expertise",
+        "description": "Core research domains that define the academic profile.",
+        "items": [
+          "Soft soil behavior and improvement",
+          "Vacuum-based densification methods",
+          "Laboratory and model testing",
+          "Sustainable geotechnical solutions"
+        ]
+      },
+      {
+        "title": "Current Research Direction",
+        "description": "Topics that can be emphasized beside the slider and welcome copy.",
+        "items": [
+          "High vacuum densification for weak soil",
+          "Expansive soil stabilization",
+          "Correlation of field and laboratory parameters",
+          "Research translation into practical engineering"
+        ]
+      },
+      {
+        "title": "Collaboration Focus",
+        "description": "Themes suitable for future PhD, MSc, or postdoctoral collaboration.",
+        "items": [
+          "Joint publications and applied studies",
+          "Field validation and laboratory extension",
+          "Interdisciplinary civil engineering work",
+          "Academic mentoring and research teamwork"
+        ]
+      }
+    ]
+  },
+  "professorPage": {
+    "hero": {
+      "welcomeTitle": "Welcome to Our Lab",
+      "headline": "Building rigorous, collaborative, and high-impact research in geotechnical engineering",
+      "description": "Our lab advances experimental and data-informed geotechnical research with a focus on soft soil improvement, ground response, sustainable engineering methods, and the training of future researchers. We combine laboratory studies, field-oriented thinking, and interdisciplinary collaboration to translate research into practice.",
+      "slides": [
+        {
+          "src": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1600&q=80",
+          "alt": "Lab collaboration",
+          "title": "Collaborative research environment"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80",
+          "alt": "Field investigation",
+          "title": "Field-connected geotechnical inquiry"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80",
+          "alt": "Research vision",
+          "title": "Research themes, methods, and impact"
+        }
+      ]
+    },
+    "collaboration": {
+      "title": "Collaboration & Open Positions",
+      "description": "We welcome applications from highly motivated PhD students, Master's researchers, and postdoctoral scholars who want to work on experimental geotechnics, soil improvement, field-informed modeling, and interdisciplinary civil engineering research. We are also open to academic, industrial, and international research collaborations.",
+      "positions": [
+        "PhD openings",
+        "Master's research positions",
+        "Postdoctoral opportunities",
+        "Visiting researcher collaborations"
+      ]
+    },
+    "aboutLab": {
+      "title": "About the Lab",
+      "summary": "The lab serves as a research, training, and collaboration platform where experimental methods, engineering judgment, and data-driven analysis come together to address real-world geotechnical challenges.",
+      "metrics": [
+        { "label": "Research Tracks", "value": "4" },
+        { "label": "Current Members", "value": "8+" },
+        { "label": "Active Collaborations", "value": "6+" },
+        { "label": "Selected Publications", "value": "10+" }
+      ],
+      "overview": [
+        "The lab investigates weak and problematic soils, soil improvement methods, and engineering performance through controlled experimentation and applied interpretation.",
+        "Our work connects academic depth with practical engineering relevance, supporting both scientific contribution and field translation.",
+        "We aim to create a research culture that is technically strong, collaborative, and supportive of independent scholarly growth."
+      ],
+      "researchThemes": [
+        {
+          "title": "Soft Soil Improvement",
+          "description": "Experimental and applied study of densification, stabilization, and performance enhancement methods for weak soils."
+        },
+        {
+          "title": "Vacuum-Based Ground Improvement",
+          "description": "Investigation of high-vacuum densification concepts, mechanisms, and engineering implications under controlled conditions."
+        },
+        {
+          "title": "Field and Laboratory Correlation",
+          "description": "Bridging laboratory measurements and field parameters to improve interpretation, design confidence, and engineering applicability."
+        },
+        {
+          "title": "Sustainable Geotechnical Solutions",
+          "description": "Development of methods and materials that support resilient, economical, and environmentally responsible geotechnical practice."
+        }
+      ],
+      "facilities": [
+        "Geotechnical laboratory testing workflows",
+        "Model-scale experimental setup design",
+        "Soil index and performance characterization",
+        "Data analysis and visual interpretation pipelines",
+        "Collaborative supervision and publication development"
+      ],
+      "culture": [
+        "Strong mentoring for graduate and early-career researchers",
+        "Emphasis on writing, technical communication, and publication quality",
+        "Collaborative research planning with clear ownership and growth",
+        "Inclusive lab culture built around curiosity, rigor, and professionalism"
+      ]
+    }
+  },
   "projects": [
     {
       "title": "Assistive UX Toolkit",
       "subtitle": "Tooling & patterns for inclusive interfaces",
       "year": "2025",
-      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=300&fit=crop",
+      "image": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80",
       "description": "A toolkit for designers & developers to build accessible UI components and test assistive workflows.",
+      "longDescription": "This project develops a reusable accessibility-oriented toolkit for interface prototyping, testing, and implementation. It combines design guidance, tested interface patterns, and evaluation workflows to help research teams and developers build more inclusive digital systems.",
+      "demoUrl": "https://example.edu/assistive-ux-demo",
+      "videoUrl": "https://www.youtube.com/embed/Gl5MVtD3flQ",
+      "media": {
+        "featuredVideo": "https://www.youtube.com/embed/Gl5MVtD3flQ",
+        "featuredVideoTitle": "Assistive UX Toolkit Demo",
+        "featuredImage": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80",
+        "featuredImageCaption": "Core toolkit interface used for design and accessibility evaluation.",
+        "screenshots": [
+          {
+            "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80",
+            "caption": "Design review and collaborative prototyping workflow"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+            "caption": "Accessibility testing environment used in project evaluation"
+          }
+        ]
+      },
+      "meta": [
+        { "label": "Focus", "value": "Accessible Interface Research" },
+        { "label": "Methods", "value": "Design Systems, Evaluation, Prototyping" },
+        { "label": "Status", "value": "Ongoing" }
+      ],
+      "highlights": [
+        "Reusable UI patterns for accessible product development",
+        "Evaluation workflow for assistive interaction testing",
+        "Research translation into practical academic and development settings"
+      ],
+      "figures": [
+        {
+          "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80",
+          "caption": "Design review and collaborative prototyping workflow"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+          "caption": "Accessibility testing environment used in project evaluation"
+        }
+      ],
       "github": "https://github.com/example/assistive-ux",
       "url": "https://example.edu/assistive-ux"
     },
@@ -143,8 +368,47 @@
       "title": "Repro Pipelines",
       "subtitle": "Workflows for reproducible experiments",
       "year": "2024",
-      "image": "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=600&h=300&fit=crop",
+      "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
       "description": "Automated scripts and containerized environments that make experiments reproducible.",
+      "longDescription": "A reproducible research workflow designed to improve consistency across data preparation, experiment execution, analysis, and reporting. The project supports transparent academic practice and faster collaboration among distributed research teams.",
+      "demoUrl": "https://example.edu/repro-pipelines-demo",
+      "videoUrl": "https://www.youtube.com/embed/Gl5MVtD3flQ",
+      "media": {
+        "featuredVideo": "https://www.youtube.com/embed/Gl5MVtD3flQ",
+        "featuredVideoTitle": "Repro Pipelines Workflow Overview",
+        "featuredImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1400&q=80",
+        "featuredImageCaption": "Pipeline overview showing code, data, and reproducibility workflow integration.",
+        "screenshots": [
+          {
+            "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+            "caption": "Research computing workflow for repeatable experiment design"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80",
+            "caption": "Code, data, and result tracking pipeline"
+          }
+        ]
+      },
+      "meta": [
+        { "label": "Focus", "value": "Reproducible Research Infrastructure" },
+        { "label": "Tools", "value": "Python, Containers, Automation" },
+        { "label": "Output", "value": "Workflow and Experiment Pipelines" }
+      ],
+      "highlights": [
+        "Automated setup for repeatable experiment execution",
+        "Containerized environments for stable academic workflows",
+        "Integrated output pipeline for documentation and reporting"
+      ],
+      "figures": [
+        {
+          "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+          "caption": "Research computing workflow for repeatable experiment design"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80",
+          "caption": "Code, data, and result tracking pipeline"
+        }
+      ],
       "github": "https://github.com/example/repro-pipelines",
       "url": "https://example.edu/repro-pipelines"
     },
@@ -152,8 +416,47 @@
       "title": "Study Portal",
       "subtitle": "Participant recruitment & consent",
       "year": "2023",
-      "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=300&fit=crop",
+      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
       "description": "A secure, privacy-preserving portal to manage research participants and consent forms.",
+      "longDescription": "A secure project platform supporting participant recruitment, informed consent workflows, and structured research communication. The system was designed to reduce administrative burden while improving privacy and process consistency in study management.",
+      "demoUrl": "https://example.edu/study-portal-demo",
+      "videoUrl": "https://www.youtube.com/embed/Gl5MVtD3flQ",
+      "media": {
+        "featuredVideo": "https://www.youtube.com/embed/Gl5MVtD3flQ",
+        "featuredVideoTitle": "Study Portal Demonstration",
+        "featuredImage": "https://images.unsplash.com/photo-1573497161161-c13f6aa5b321?auto=format&fit=crop&w=1400&q=80",
+        "featuredImageCaption": "Participant-facing workflow and administrative study management environment.",
+        "screenshots": [
+          {
+            "image": "https://images.unsplash.com/photo-1573497161161-c13f6aa5b321?auto=format&fit=crop&w=1200&q=80",
+            "caption": "User-facing participant workflow and communication interface"
+          },
+          {
+            "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80",
+            "caption": "Academic collaboration and study management context"
+          }
+        ]
+      },
+      "meta": [
+        { "label": "Focus", "value": "Research Participation Workflow" },
+        { "label": "Scope", "value": "Recruitment, Consent, Data Privacy" },
+        { "label": "Type", "value": "Web-Based Academic Platform" }
+      ],
+      "highlights": [
+        "Structured participant onboarding and consent flow",
+        "Privacy-aware communication and record handling",
+        "Usable administration interface for research teams"
+      ],
+      "figures": [
+        {
+          "image": "https://images.unsplash.com/photo-1573497161161-c13f6aa5b321?auto=format&fit=crop&w=1200&q=80",
+          "caption": "User-facing participant workflow and communication interface"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80",
+          "caption": "Academic collaboration and study management context"
+        }
+      ],
       "github": "https://github.com/example/study-portal",
       "url": "https://example.edu/study-portal"
     }
@@ -166,8 +469,8 @@
       "venue": "Arabian Journal of Geosciences",
       "year": 2025,
       "type": "journal",
-      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=200&h=200&fit=crop",
+      "image": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?auto=format&fit=crop&w=1200&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?auto=format&fit=crop&w=320&q=80",
       "description": "This study presents a controlled laboratory evaluation of the high vacuum densification method (HVDM) for improving extremely soft soil using a 1 g physical model. Following several trials on the phys...",
       "pdfUrl": "https://link.springer.com/article/10.1007/s12517-025-12278-2",
       "url": "https://link.springer.com/article/10.1007/s12517-025-12278-2",
@@ -181,8 +484,8 @@
       "venue": "Journal of Examples, Vol. 12, Issue 3",
       "year": 2024,
       "type": "journal",
-      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=200&fit=crop",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=320&q=80",
       "description": "Proposed a reproducible workflow for HCI experiments integrating participant privacy checks and automated analysis pipelines.",
       "pdfUrl": "#",
       "url": "https://example.edu/paper1",
@@ -196,8 +499,8 @@
       "venue": "ACM Transactions on Accessible Computing, Vol. 8",
       "year": 2023,
       "type": "journal",
-      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f2?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1563986768609-322da13575f2?w=200&h=200&fit=crop",
+      "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=320&q=80",
       "description": "Introduced a framework for collecting sensitive user data while maintaining participant anonymity and meeting IRB compliance standards.",
       "pdfUrl": "#",
       "url": "https://example.edu/paper4",
@@ -211,8 +514,8 @@
       "venue": "",
       "year": 2023,
       "type": "conference",
-      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=200&h=200&fit=crop",
+      "image": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1200&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=320&q=80",
       "description": "Bangladesh is a densely populated country with a 32% coastal area. Many coastal regions  of Bangladesh have very soft to soft soil with poor geotechnical properties such as very low bearing capacity, ...",
       "pdfUrl": "http://lib.buet.ac.bd:8080/xmlui/handle/123456789/6609",
       "url": "http://lib.buet.ac.bd:8080/xmlui/handle/123456789/6609",
@@ -226,8 +529,8 @@
       "venue": "Proceedings of CHI Conference on Human Factors",
       "year": 2022,
       "type": "conference",
-      "image": "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=200&h=200&fit=crop",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=320&q=80",
       "description": "Explores how assistive feedback can be integrated into standard UI patterns without increasing cognitive load for sighted users.",
       "pdfUrl": "#",
       "url": "https://example.edu/paper2",
@@ -241,8 +544,8 @@
       "venue": "Proceedings of ASSETS Conference on Assistive Technologies",
       "year": 2021,
       "type": "conference",
-      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=200&h=200&fit=crop",
+      "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1200&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=320&q=80",
       "description": "Evaluated haptic and auditory feedback modalities for screen reader navigation in complex web applications.",
       "pdfUrl": "#",
       "url": "https://example.edu/paper5",
@@ -256,13 +559,43 @@
       "venue": "Workshop on Inclusive UX, co-located with CHI",
       "year": 2021,
       "type": "workshop",
-      "image": "https://images.unsplash.com/photo-1558403194-611308249627?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1558403194-611308249627?w=200&h=200&fit=crop",
+      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=320&q=80",
       "description": "Catalogued 12 design patterns for multi-modal assistive applications with implementation guidelines and evaluation criteria.",
       "pdfUrl": "#",
       "url": "https://example.edu/paper3",
       "citations": 11,
       "bibtex": "@inproceedings{researcher2021,title={Inclusive Design Patterns},author={A. Researcher and D. Analyst},booktitle={Workshop on Inclusive UX},year={2021}}"
+    },
+    {
+      "title": "Poster: Field and Laboratory Correlation in High Vacuum Soil Densification",
+      "authors": "Ripon Chandra Malo and M. A. Ansary",
+      "highlightAuthor": "Ripon Chandra Malo",
+      "venue": "International Conference on Ground Improvement Poster Session",
+      "year": 2022,
+      "type": "poster",
+      "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=320&q=80",
+      "description": "A research poster presenting the relationship between field observations and laboratory model testing for high vacuum densification in weak soil conditions.",
+      "pdfUrl": "https://example.edu/poster1.pdf",
+      "url": "https://example.edu/poster1",
+      "citations": 3,
+      "bibtex": "@misc{malo2022poster,title={Poster: Field and Laboratory Correlation in High Vacuum Soil Densification},author={Ripon Chandra Malo and M. A. Ansary},year={2022},note={Poster presentation}}"
+    },
+    {
+      "title": "Experimental Investigation of High Vacuum Densification in Very Soft Soil",
+      "authors": "Ripon Chandra Malo",
+      "highlightAuthor": "Ripon Chandra Malo",
+      "venue": "M.Sc. Thesis, Bangladesh University of Engineering and Technology",
+      "year": 2023,
+      "type": "thesis",
+      "image": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=320&q=80",
+      "description": "A graduate thesis focused on experimental validation of high vacuum densification techniques, including model preparation, test methodology, interpretation, and engineering implications for weak soil improvement.",
+      "pdfUrl": "https://example.edu/thesis1.pdf",
+      "url": "https://example.edu/thesis1",
+      "citations": 6,
+      "bibtex": "@mastersthesis{malo2023thesis,title={Experimental Investigation of High Vacuum Densification in Very Soft Soil},author={Ripon Chandra Malo},school={Bangladesh University of Engineering and Technology},year={2023}}"
     },
     {
       "title": "Improvement of Geotechnical Properties of Expansive Soil by Lime and Polypropylene Fiber Material",
@@ -271,8 +604,8 @@
       "venue": "Journal of Geotechnical Studies",
       "year": 2021,
       "type": "journal",
-      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=200&h=200&fit=crop",
+      "image": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1200&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=320&q=80",
       "description": "Improvement of the Geotechnical properties of expansive soils by mixing Lime and Polypropylene Fibers is the main concentration of this research. For this research purpose, expansive soil samples were...",
       "pdfUrl": "https://www.researchgate.net/profile/Ripon-Malo/publication/352994512_Improvement_of_Geotechnical_Properties_of_Expansive_Soil_by_Lime_and_Polypropylene_Fiber_Material/links/60e6e8631c28af3458530678/Improvement-of-Geotechnical-Properties-of-Expansive-Soil-by-Lime-and-Polypropylene-Fiber-Material.pdf",
       "url": "https://www.researchgate.net/profile/Ripon-Malo/publication/352994512_Improvement_of_Geotechnical_Properties_of_Expansive_Soil_by_Lime_and_Polypropylene_Fiber_Material/links/60e6e8631c28af3458530678/Improvement-of-Geotechnical-Properties-of-Expansive-Soil-by-Lime-and-Polypropylene-Fiber-Material.pdf",
@@ -286,8 +619,8 @@
       "venue": "Journal of Geotechnical Studies",
       "year": 2020,
       "type": "journal",
-      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=200&h=200&fit=crop",
+      "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=320&q=80",
       "description": "Soil is naturally heterogeneous and non-uniform materials because it is made up of different types of matter. Understanding of soil parameters is one of the most complex tasks in geotechnical engineer...",
       "pdfUrl": "https://www.researchgate.net/profile/Nasima-Sultana/publication/340950240_Correlations_between_CPT_SPT_and_Soil_Parameters_for_Khulna_Bangladesh/links/5ea6f9ac299bf1125612bf2e/Correlations-between-CPT-SPT-and-Soil-Parameters-for-Khulna-Bangladesh.pdf",
       "url": "https://www.researchgate.net/profile/Nasima-Sultana/publication/340950240_Correlations_between_CPT_SPT_and_Soil_Parameters_for_Khulna_Bangladesh/links/5ea6f9ac299bf1125612bf2e/Correlations-between-CPT-SPT-and-Soil-Parameters-for-Khulna-Bangladesh.pdf",
@@ -301,8 +634,8 @@
       "venue": "",
       "year": 2018,
       "type": "conference",
-      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=200&h=200&fit=crop",
+      "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80",
+      "thumbnail": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=320&q=80",
       "description": "",
       "pdfUrl": "#",
       "url": "#",
@@ -388,48 +721,91 @@
       "subtitle": "Conference X, 2024",
       "url": "https://example.edu/best-paper",
       "icon": "award",
-      "iconColor": "warm"
+      "iconColor": "warm",
+      "organizer": "Conference X Organizing Committee",
+      "location": "Singapore",
+      "date": "July 2024",
+      "certificateName": "Best Paper Award Certificate",
+      "details": "Recognized for outstanding research contribution and presentation quality in a competitive international conference setting.",
+      "certificateImage": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80",
+      "certificateUrl": "https://example.edu/best-paper-certificate"
     },
     {
       "title": "Demo Prize",
       "subtitle": "Symposium Y, 2023",
       "url": "https://example.edu/demo-prize",
       "icon": "star",
-      "iconColor": "warm"
+      "iconColor": "warm",
+      "organizer": "Symposium Y",
+      "location": "Boston, USA",
+      "date": "October 2023",
+      "certificateName": "Demo Prize Recognition",
+      "details": "Awarded for presenting an engaging live demonstration with strong research-to-practice impact and audience response.",
+      "certificateImage": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=900&q=80",
+      "certificateUrl": "https://example.edu/demo-prize-certificate"
     },
     {
       "title": "Graduate Fellowship",
       "subtitle": "Foundation Z, 2021",
       "url": "https://example.edu/fellowship",
       "icon": "cap",
-      "iconColor": "warm"
+      "iconColor": "warm",
+      "organizer": "Foundation Z",
+      "location": "Dhaka, Bangladesh",
+      "date": "January 2021",
+      "certificateName": "Graduate Fellowship Award",
+      "details": "Competitive fellowship supporting graduate research, academic development, and scholarly excellence.",
+      "certificateImage": "https://images.unsplash.com/photo-1516321310764-8d2ef7a13f7b?auto=format&fit=crop&w=900&q=80",
+      "certificateUrl": "https://example.edu/fellowship-certificate"
     },
     {
       "title": "UX Research Certificate",
       "subtitle": "Provider A, 2023",
       "url": "https://example.edu/ux-cert",
       "icon": "monitor",
-      "iconColor": "accent"
+      "iconColor": "accent",
+      "organizer": "Provider A",
+      "location": "Online",
+      "date": "March 2023",
+      "certificateName": "UX Research Professional Certificate",
+      "details": "Completed structured training in research planning, usability evaluation, and evidence-based interface design.",
+      "certificateImage": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80",
+      "certificateUrl": "https://example.edu/ux-research-certificate"
     },
     {
       "title": "Data Privacy Training",
       "subtitle": "Provider B, 2022",
       "url": "https://example.edu/privacy",
       "icon": "shield",
-      "iconColor": "sage"
+      "iconColor": "sage",
+      "organizer": "Provider B",
+      "location": "Online",
+      "date": "August 2022",
+      "certificateName": "Data Privacy Compliance Certificate",
+      "details": "Certified in research data privacy, safe handling of participant information, and responsible data management practices.",
+      "certificateImage": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=80",
+      "certificateUrl": "https://example.edu/privacy-certificate"
     },
     {
       "title": "Open Source Contributor",
       "subtitle": "Project C, 2022",
       "url": "https://example.edu/oss",
       "icon": "code",
-      "iconColor": "accent"
+      "iconColor": "accent",
+      "organizer": "Project C Maintainers",
+      "location": "Global / Remote",
+      "date": "December 2022",
+      "certificateName": "Contributor Recognition",
+      "details": "Recognized for consistent open-source contributions, technical collaboration, and community support in a research-related software project.",
+      "certificateImage": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80",
+      "certificateUrl": "https://example.edu/oss-recognition"
     }
   ],
   "contact": {
     "email": "rcmalo@university.edu",
     "phone": "+1 (801) 555‑0199",
     "office": "Room 312, Merrill Engineering Bldg",
+    "cvUrl": "https://example.edu/cv.pdf",
     "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.5!2d-111.84!3d40.76!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sUniversity+of+Utah!5e0!3m2!1sen!2sus",
     "socials": [
       {
@@ -445,10 +821,25 @@
         "url": "https://linkedin.com/in/example"
       },
       {
+        "platform": "researchgate",
+        "url": "https://www.researchgate.net/profile/example"
+      },
+      {
+        "platform": "kaggle",
+        "url": "https://www.kaggle.com/example"
+      },
+      {
         "platform": "orcid",
         "url": "https://orcid.org/0000-0000-0000-0000"
       }
     ]
+  },
+  "cv": {
+    "title": "Academic CV",
+    "description": "Use this area for a complete academic CV covering education, publications, teaching, research activities, and service.",
+    "note": "You can later connect this button to a PDF CV, resume, or full profile page.",
+    "buttonLabel": "View CV",
+    "url": "https://example.edu/cv.pdf"
   },
   "footer": {
     "copyright": "Dr. R.C. Malo",
@@ -457,6 +848,10 @@
     "version": "V2.0.0"
   },
   "settings": {
+    "template": "phd",
+    "templateLabel": "PhD Student",
+    "_template_options": "Available templates: 'phd' (student view), 'professor' (professor/teacher view)",
+    "demoTemplateSwitcher": true,
     "publicationStyle": "alt",
     "scholarId": "7-QY6VEAAAAJ",
     "_theme_options": "Available themes: 'BH' (default light), 'blue' (academic light blue), 'dark'",

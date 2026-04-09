@@ -1,4 +1,4 @@
-![Acadpro Academic Portfolio](https://img.shields.io/badge/Academic-Portfolio-2d5a7b?style=for-the-badge&labelColor=ffffff) ![Version 2.0.0](https://img.shields.io/badge/Version-2.0.0-2d5a7b?style=for-the-badge&labelColor=ffffff) ![License](https://img.shields.io/badge/License-Restricted-2d5a7b?style=for-the-badge&labelColor=ffffff)
+![Acadpro Academic Portfolio](https://img.shields.io/badge/Academic-Portfolio-2d5a7b?style=for-the-badge&labelColor=ffffff) ![Version 2.0.2](https://img.shields.io/badge/Version-2.0.2-2d5a7b?style=for-the-badge&labelColor=ffffff) ![License](https://img.shields.io/badge/License-MIT-2d5a7b?style=for-the-badge&labelColor=ffffff)
 
 
 <div align="center">
@@ -13,8 +13,8 @@
 
 # Academic Portfolio Template
 
-**A modern, JSON-driven academic portfolio built with pure HTML, CSS, and JavaScript.**
-Designed for researchers, professors, and academics who want a polished online presence without frameworks or dependencies. Edit one JSON file to update your entire site.
+**SEO-optimized GitHub repository for an academic portfolio template, professor lab website, researcher homepage, and university faculty profile theme.**
+Acadpro is a modern, JSON-driven academic portfolio and lab website repository built with pure HTML, CSS, and JavaScript for PhD students, MSc students, postdocs, professors, research groups, and university faculty who want a polished online presence without frameworks or dependencies.
 
 ---
 
@@ -25,10 +25,16 @@ Designed for researchers, professors, and academics who want a polished online p
 
 ---
 
-## What's New in V2.0.0
+## What's New in V2.0.2
 
 - All site content is now driven by a single `data.json` file — no more editing HTML
-- **New Section: "About My Lab"** with comprehensive tabbed interface for Lab Focus and Hierarchical Member Tree Display
+- Student and Professor modes are now supported with separate frontends
+- New dedicated `professor.html` page for faculty and research lab websites
+- Floating demo switcher now opens the Student or Professor page directly
+- Student template keeps the portfolio-oriented homepage and no-map contact layout
+- Professor page adds a lab-focused hero, collaboration section, lab overview, lab publications, and map-based contact layout
+- Research Highlights & Interests now use a tabbed layout matching the existing theme
+- Highlights and Interests can now render compact technical skill cards with icons and learning levels
 - Optional Google Scholar integration to auto-update citation counts
 - Two publication display styles — card grid or tabbed list — switchable via JSON
 - Dynamic Publication sorting by "Year" or "Citations" with "Load More" pagination
@@ -47,6 +53,101 @@ The design follows an editorial aesthetic with warm muted tones, refined typogra
 ---
 ---
 
+## Templates
+
+Acadpro now supports two main academic website experiences:
+- `index.html` for Student / Researcher portfolios
+- `professor.html` for Professor / Lab frontends
+
+### Student Template
+
+Use this for:
+- PhD students
+- MSc / MS students
+- Postdocs
+- Early-career researchers
+
+Main characteristics:
+- Hero remains in the same visual style
+- Simple `Open to Collaborate` banner
+- Tabbed `Research Highlights & Interests` section
+- Compact technical skill cards supported inside research tabs
+- Existing publication system stays unchanged
+- Existing project cards stay unchanged
+- Existing teaching section stays unchanged
+- Existing experience and education tabs stay unchanged
+- Existing awards section stays unchanged
+- `Contact Me` becomes two centered banner blocks with no map
+
+### Professor Template
+
+Use this for:
+- Professors
+- Teachers
+- Senior faculty profiles
+- Research labs
+- Principal investigators
+
+Main characteristics:
+- Same visual theme and shared academic branding
+- Dedicated `professor.html` page instead of forcing all logic into one homepage
+- Lab-first hero with welcome message and research highlight slider
+- Collaboration and open positions section for PhD, Master's, postdoc, and visiting researchers
+- Large `About the Lab` section with tabs for overview, themes, facilities/methods, and team/culture
+- Lab publications section reusing the shared publication engine
+- Map-based `Contact Us` area with professor/lab details, CV, and academic profiles
+
+### How To Change Template
+
+In `data.json`:
+
+```json
+"settings": {
+  "template": "phd",
+  "templateLabel": "PhD Student"
+}
+```
+
+Available values:
+- `phd` for the student/researcher view
+- `professor` for the professor/teacher view
+
+You can also change the visible label:
+
+```json
+"templateLabel": "Postdoctoral Researcher"
+```
+
+### Which File To Open
+
+- Use `index.html` for the student/researcher site
+- Use `professor.html` for the professor/lab site
+- Both pages read from the same `data.json`
+
+### Demo Switcher
+
+For demo purposes, the site can show a floating switch button on the middle-right side of the screen to open the Student or Professor page quickly.
+
+Enable it in `data.json`:
+
+```json
+"settings": {
+  "demoTemplateSwitcher": true
+}
+```
+
+Hide it on a real published site:
+
+```json
+"settings": {
+  "demoTemplateSwitcher": false
+}
+```
+
+When hidden, visitors will only see the single template selected in `settings.template`.
+
+---
+
 ## Page Structure
 
 | # | Section | JSON Key | Description |
@@ -54,16 +155,27 @@ The design follows an editorial aesthetic with warm muted tones, refined typogra
 | 01 | **Header** | `profile` | Sticky navigation with glass blur effect and theme toggle |
 | 02 | **Hero** | `profile` & `projects` | Welcome text with auto-rotating photo carousel (combines profile pics + project pics) |
 | 03 | **Hiring Banner** | `hiring` | Highlighted "Open to Work" section with animated pulse |
-| 04 | **About My Lab** | `lab` | Tabbed section outlining lab focus, director details, and an eye-catching hierarchical lab members tree |
-| 05 | **Expertise Cloud** | `expertise` | Interactive skill tags with proficiency tooltips |
-| 06 | **Projects** | `projects` | Card grid with real images, GitHub links, share dropdown |
-| 07 | **Publications** | `publications` | Tabbed list with auto-fetch from Scholar, "Load More" pagination, Sorting (Year/Citations), and BibTeX copy modal |
-| 08 | **Teaching** | `teaching` | Video tiles that open YouTube in a modal |
-| 09 | **Experience** | `experience` | Tabbed panel — work history with icons |
-| 10 | **Education** | `education` | Tabbed panel — degrees with university logos |
-| 11 | **Awards** | `awards` | Compact cards with external links and hover arrows |
-| 12 | **Contact** | `contact` | Embedded Google Map, contact details, and social links |
-| 13 | **Footer** | `footer` | Copyright, author credit, version, and repo link |
+| 04 | **Research Highlights & Interests** | `researchProfile`, `expertise`, `lab` | Tabbed research overview, highlights, and interests |
+| 05 | **Publications** | `publications` | Existing publication system with auto-fetch compatibility, sorting, BibTeX, sharing, and load more |
+| 06 | **Projects** | `projects` | Existing project cards with images, GitHub links, and share dropdown |
+| 07 | **Teaching** | `teaching` | Existing video tiles that open YouTube in a modal |
+| 08 | **Experience** | `experience` | Existing tabbed work-history panel |
+| 09 | **Education** | `education` | Existing tabbed degree panel |
+| 10 | **Awards** | `awards` | Existing compact cards with external links |
+| 11 | **Contact Me** | `contact`, `cv`, `settings.template` | Student view: two centered banners without map. Professor view: map layout with contact info |
+| 12 | **Footer** | `footer` | Existing footer style with version and repo link |
+
+### Professor Page Structure
+
+| # | Section | JSON Key | Description |
+|:---:|:---|:---|:---|
+| 01 | **Header** | `profile` | Shared sticky header and branding |
+| 02 | **Lab Hero** | `professorPage.hero`, `profile`, `lab` | Welcome to lab message with research highlight slider |
+| 03 | **Collaboration & Open Positions** | `professorPage.collaboration` | PhD, Master's, postdoc, visiting researcher, and collaboration callout |
+| 04 | **About the Lab** | `professorPage.aboutLab`, `lab` | Large tabbed lab section with overview, themes, methods, and people |
+| 05 | **Lab Publications** | `publications` | Shared publication engine reused for the professor frontend |
+| 06 | **Contact Us** | `contact`, `cv`, `lab`, `profile` | Map-based faculty/lab contact section |
+| 07 | **Footer** | `footer` | Shared footer style |
 
 ---
 
@@ -181,7 +293,7 @@ All site content is stored in `data.json`. The `index.html` file reads this JSON
 }
 ```
 
-### Hiring Banner
+### Hiring Banner / Open To Collaborate
 
 Toggle the banner on or off:
 
@@ -195,9 +307,104 @@ Toggle the banner on or off:
 
 Set `enabled` to `false` to hide the banner completely.
 
-### About My Lab
+You can also supply a cleaner opportunity list for student-style templates:
 
-Manage your lab's overview and member hierarchy directly in the JSON file.
+```json
+"opportunities": {
+  "title": "Open to Collaborate",
+  "summary": "Open to PhD, MSc, postdoc, and collaborative research opportunities.",
+  "positions": [
+    "Seeking PhD position",
+    "Seeking MSc position",
+    "Seeking Postdoc position"
+  ]
+}
+```
+
+### Research Highlights & Interests
+
+```json
+"researchProfile": {
+  "title": "Research Highlights & Interests",
+  "summary": "Short overview of your research direction.",
+  "interests": [
+    "Geotechnical Engineering",
+    "Ground Improvement",
+    "Experimental Soil Mechanics"
+  ],
+  "metrics": [
+    { "label": "Publications", "value": "8+" }
+  ],
+  "highlights": [
+    {
+      "title": "Area of Expertise",
+      "description": "Your focus areas.",
+      "items": [
+        "Soft soil improvement",
+        "Vacuum densification"
+      ]
+    }
+  ]
+}
+```
+
+### Contact And CV
+
+```json
+"contact": {
+  "email": "your-email@university.edu",
+  "phone": "+1 (000) 000-0000",
+  "office": "Room 101, Building Name",
+  "cvUrl": "https://example.edu/cv.pdf",
+  "socials": [
+    { "platform": "google-scholar", "url": "https://scholar.google.com/..." },
+    { "platform": "github", "url": "https://github.com/..." },
+    { "platform": "linkedin", "url": "https://linkedin.com/in/..." },
+    { "platform": "orcid", "url": "https://orcid.org/..." }
+  ]
+},
+"cv": {
+  "title": "Academic CV",
+  "buttonLabel": "View CV",
+  "url": "https://example.edu/cv.pdf"
+}
+```
+
+Template behavior:
+- `phd` removes the map and shows two centered contact banners
+- `professor` keeps the map contact layout
+
+### Previous Lab Content
+
+The previous lab-oriented data can still remain in `data.json`, and the research section can reuse it as supporting content when needed.
+
+```json
+"lab": {
+  "directorName": "Dr. Your Name",
+  "title": "Your Lab Name",
+  "description": "Lab focus and descriptions go here."
+}
+```
+
+### Real Site Setup
+
+For a real site, these are the most common production settings:
+
+```json
+"settings": {
+  "template": "phd",
+  "templateLabel": "PhD Student",
+  "demoTemplateSwitcher": false,
+  "publicationStyle": "alt",
+  "theme": "blue"
+}
+```
+
+That keeps one stable template live and hides the floating demo switcher from visitors.
+
+### Legacy Lab / About Section Data
+
+If you still want to keep older lab-oriented content in the JSON, you can:
 
 ```json
 "lab": {
@@ -450,16 +657,18 @@ git push
 - Scroll-triggered reveal animations with staggered timing
 - Expertise cloud with hover tooltips showing proficiency levels
 - Tabbed content panel for experience and education
+- Tabbed professor lab section for overview, research themes, facilities, and team
 - Share dropdown with Copy Link, Facebook, LinkedIn, and X support
 - BibTeX download button that generates and saves citation files
-- Publication filter tabs (All, Journal, Conference, Workshop)
+- Publication filter tabs including Journal, Conference, Workshop, Poster, and Thesis / Dissertation
 - Video tiles that open lectures in a YouTube modal
-- Awards and certifications as clickable external links
+- Awards and certifications with popup detail support
+- Project detail popups with tabs, screenshots, demo links, repository links, and video support
 
 ### Technical
 
-- JSON-driven — all content in one file, zero HTML editing needed
-- Single HTML file — no build step, no dependencies
+- JSON-driven — all content in one file, zero HTML editing needed for content updates
+- Dual static frontends: `index.html` and `professor.html`
 - All icons are inline SVG — no icon library needed
 - Google Fonts loaded via preconnect for performance
 - Fully semantic HTML with ARIA labels
@@ -483,31 +692,11 @@ Typical turnaround for custom modifications is 3 to 7 business days depending on
 
 ---
 
-## Usage Rules
+## License
 
-This project is released under a restricted license. Please read the following terms carefully.
+This project is released under the MIT License.
 
-### Permitted
-
-- Use this template for your own personal or academic portfolio.
-- Modify all content, colors, fonts, images, sections, and layout.
-- Deploy the modified version on any hosting platform.
-- Use for non-commercial purposes without prior written permission.
-
-### Required
-
-- **Footer attribution must remain visible.** The footer must contain a working link back to this GitHub repository.
-- **Source attribution must remain in the HTML.** The copyright comment block at the top of the source must not be removed.
-
-### Not Permitted
-
-- Sell this template or any modified version.
-- Redistribute on any marketplace, template directory, or download site.
-- Remove the footer repository link.
-- Claim this work as your own original creation.
-- Use in any commercial product that generates revenue from the template.
-
-**Summary:** Use it freely. Customize everything. Keep the footer link. Do not sell it.
+You can use, modify, publish, distribute, sublicense, and sell this project, as long as the copyright notice and license text are included in substantial copies of the software.
 
 ---
 
@@ -522,7 +711,7 @@ This project is released under a restricted license. Please read the following t
 
 ---
 
-**AcadPro — An Academic Portfolio Template** — Version 2.0.0
+**AcadPro — An Academic Portfolio Template** — Version 2.0.2
 
 Designed by **Ripon Chandra Malo**
 
