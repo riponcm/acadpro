@@ -1,3 +1,6 @@
+# AcadPro--Academic Portfolio Template
+**A GitHub repository for an academic portfolio template, professor lab website, researcher homepage, and university faculty profile theme.**
+
 ![Acadpro Academic Portfolio](https://img.shields.io/badge/Academic-Portfolio-2d5a7b?style=for-the-badge&labelColor=ffffff) ![Version 2.0.2](https://img.shields.io/badge/Version-2.0.2-2d5a7b?style=for-the-badge&labelColor=ffffff) ![License](https://img.shields.io/badge/License-MIT-2d5a7b?style=for-the-badge&labelColor=ffffff)
 
 
@@ -11,9 +14,9 @@
 
 ![Hero Section](screenshots/hero.png)
 
-# Academic Portfolio Template
+# AcadPro--Academic Portfolio Template
 
-**SEO-optimized GitHub repository for an academic portfolio template, professor lab website, researcher homepage, and university faculty profile theme.**
+
 Acadpro is a modern, JSON-driven academic portfolio and lab website repository built with pure HTML, CSS, and JavaScript for PhD students, MSc students, postdocs, professors, research groups, and university faculty who want a polished online presence without frameworks or dependencies.
 
 ---
